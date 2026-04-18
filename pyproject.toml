@@ -15,5 +15,6 @@ dependencies = [
   "tqdm",
   "pyyaml",
   "rich",
+  "scipy>=1.17.1",
 ]
 

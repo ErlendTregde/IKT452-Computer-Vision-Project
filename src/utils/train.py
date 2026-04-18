@@ -38,6 +38,11 @@ def train_one_epoch(
 
         total_loss += loss.item() #type: ignore
 
+        # Release cached GPU memory to prevent allocator fragmentation accumulating
+        # across batches — important for models with many intermediate tensors.
+        if device.type == "cuda":
+            torch.cuda.empty_cache()
+
         if batch_idx % print_freq == 0:
             lr = optimizer.param_groups[0]["lr"]
             print(
@@ -57,6 +62,7 @@ def train(
     lr: float = 0.001,
     momentum: float = 0.9,
     weight_decay: float = 0.0005,
+    optimizer_type: str = "sgd",
     checkpoint_dir: str = "checkpoints",
     resume: Optional[str] = None,
     compute_detection_metrics: bool = True,
@@ -69,7 +75,10 @@ def train(
         if hasattr(model, "get_param_groups")
         else model.parameters()
     )
-    optimizer = torch.optim.SGD(params, lr=lr, momentum=momentum, weight_decay=weight_decay)
+    if optimizer_type == "adamw":
+        optimizer = torch.optim.AdamW(params, lr=lr, weight_decay=weight_decay)
+    else:
+        optimizer = torch.optim.SGD(params, lr=lr, momentum=momentum, weight_decay=weight_decay)
 
     # Smooth cosine decay — avoids the sharp LR-to-zero collapse from StepLR
     scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(

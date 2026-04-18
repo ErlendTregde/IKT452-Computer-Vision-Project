@@ -4,8 +4,11 @@ import argparse
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Train Faster R-CNN on a YOLO-format dataset")
+    parser = argparse.ArgumentParser(description="Train object detection model on a YOLO-format dataset")
 
+    parser.add_argument("--model", default="faster-rcnn",
+                        choices=["faster-rcnn", "fpn", "efficientdet", "rtdetr"],
+                        help="model architecture to train (default: faster-rcnn)")
     parser.add_argument("--dataset", default="dataset", metavar="PATH",
                         help="path to dataset root (default: dataset)")
     parser.add_argument("--epochs", type=int, default=10, metavar="N",
@@ -14,10 +17,12 @@ def parse_args() -> argparse.Namespace:
                         help="images per batch (default: 4)")
     parser.add_argument("--lr", type=float, default=0.001, metavar="LR",
                         help="initial learning rate (default: 0.001)")
+    parser.add_argument("--optimizer", default="sgd", choices=["sgd", "adamw"],
+                        help="optimizer (default: sgd)")
     parser.add_argument("--momentum", type=float, default=0.9,
                         help="SGD momentum (default: 0.9)")
     parser.add_argument("--weight-decay", type=float, default=0.0005,
-                        help="SGD weight decay (default: 0.0005)")
+                        help="weight decay (default: 0.0005)")
     parser.add_argument("--num-workers", type=int, default=2, metavar="N",
                         help="dataloader worker processes (default: 2)")
     parser.add_argument("--checkpoint-dir", default="checkpoints", metavar="DIR",
