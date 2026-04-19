@@ -33,5 +33,7 @@ def parse_args() -> argparse.Namespace:
                         help="skip detection metric computation each epoch (faster)")
     parser.add_argument("--score-threshold", type=float, default=0.01, metavar="T",
                         help="minimum score for detections in metric evaluation (default: 0.01)")
+    parser.add_argument("--patience", type=int, default=0, metavar="N",
+                        help="early stopping patience in epochs, 0 = disabled (default: 0)")
 
     return parser.parse_args()

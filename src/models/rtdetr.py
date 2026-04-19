@@ -151,46 +151,37 @@ class _MLP(nn.Module):
 # ── Hungarian matching ─────────────────────────────────────────────────────────
 
 @torch.no_grad()
-def _match(pred_logits, pred_boxes, gt_labels, gt_boxes, num_classes):
+def _match(pred_logits, pred_boxes, gt_labels, gt_boxes, img_h, img_w):
     """
     Bipartite matching between predictions and ground truth for one image.
-    pred_logits: (Q, C)  pred_boxes: (Q, 4) cxcywh normalised
-    gt_labels:   (M,)    gt_boxes:   (M, 4) xyxy absolute pixels → converted inside
+    pred_logits: (Q, C+1)  pred_boxes: (Q, 4) cxcywh normalised [0,1]
+    gt_labels:   (M,)      gt_boxes:   (M, 4) xyxy absolute pixels
     Returns (pred_idx, gt_idx) matched pairs.
     """
-    Q, C = pred_logits.shape
-    M    = gt_labels.shape[0]
+    M = gt_labels.shape[0]
     if M == 0:
         return (torch.zeros(0, dtype=torch.long), torch.zeros(0, dtype=torch.long))
 
-    # Convert gt_boxes xyxy → cxcywh (already normalised if called after transform)
-    # Actually gt_boxes here are in absolute xyxy (from RCNN transform output).
-    # We work in absolute coords for cost, then normalise for L1.
-    pred_xyxy = _cxcywh_to_xyxy_abs(pred_boxes, gt_boxes)  # map pred cxcywh to abs xyxy
+    pred_xyxy = _cxcywh_to_xyxy_abs(pred_boxes, img_h, img_w)
 
-    # Classification cost: negative log-softmax probability for the gt class
-    prob = pred_logits.softmax(-1)  # (Q, C)
-    cls_cost = -prob[:, gt_labels - 1]  # (Q, M)  gt_labels are 1-indexed
+    # Classification cost: exclude background class (last index)
+    prob = pred_logits[:, :-1].softmax(-1)  # (Q, C)
+    cls_cost = -prob[:, gt_labels - 1]      # (Q, M)  gt_labels are 1-indexed
 
     # L1 cost on normalised boxes
-    gt_norm = _xyxy_to_cxcywh_norm(gt_boxes, pred_boxes)   # (M, 4)
-    pred_norm = pred_boxes                                   # already cxcywh norm
-    l1_cost = torch.cdist(pred_norm.float(), gt_norm.float(), p=1)  # (Q, M)
+    gt_norm   = _xyxy_to_cxcywh_norm(gt_boxes, img_h, img_w)  # (M, 4)
+    l1_cost   = torch.cdist(pred_boxes.float(), gt_norm.float(), p=1)  # (Q, M)
 
     # GIoU cost
-    giou = generalized_box_iou(pred_xyxy, gt_boxes)  # (Q, M)
-    giou_cost = -giou
+    giou_cost = -generalized_box_iou(pred_xyxy, gt_boxes)  # (Q, M)
 
     cost = 2.0 * cls_cost + 5.0 * l1_cost + 2.0 * giou_cost
     row, col = linear_sum_assignment(cost.cpu().numpy())
     return (torch.as_tensor(row, dtype=torch.long), torch.as_tensor(col, dtype=torch.long))
 
 
-def _cxcywh_to_xyxy_abs(pred_norm, gt_boxes_xyxy):
-    """Convert normalised cxcywh predictions to absolute xyxy using gt_boxes as size reference."""
-    # Determine image size from gt_boxes extent
-    img_w = gt_boxes_xyxy[:, 2].max().clamp(min=1)
-    img_h = gt_boxes_xyxy[:, 3].max().clamp(min=1)
+def _cxcywh_to_xyxy_abs(pred_norm, img_h, img_w):
+    """Convert normalised cxcywh predictions to absolute xyxy."""
     cx, cy, w, h = pred_norm[:, 0], pred_norm[:, 1], pred_norm[:, 2], pred_norm[:, 3]
     x1 = (cx - w / 2) * img_w
     y1 = (cy - h / 2) * img_h
@@ -199,10 +190,8 @@ def _cxcywh_to_xyxy_abs(pred_norm, gt_boxes_xyxy):
     return torch.stack([x1, y1, x2, y2], dim=1)
 
 
-def _xyxy_to_cxcywh_norm(gt_xyxy, pred_norm):
-    """Convert absolute xyxy gt to normalised cxcywh using pred range as image size."""
-    img_w = gt_xyxy[:, 2].max().clamp(min=1)
-    img_h = gt_xyxy[:, 3].max().clamp(min=1)
+def _xyxy_to_cxcywh_norm(gt_xyxy, img_h, img_w):
+    """Convert absolute xyxy gt boxes to normalised cxcywh."""
     cx = ((gt_xyxy[:, 0] + gt_xyxy[:, 2]) / 2) / img_w
     cy = ((gt_xyxy[:, 1] + gt_xyxy[:, 3]) / 2) / img_h
     w  = (gt_xyxy[:, 2] - gt_xyxy[:, 0]) / img_w
@@ -274,16 +263,19 @@ class RTDETR(nn.Module):
         )
 
         # Per-layer prediction heads (auxiliary losses, standard DETR practice)
-        self.cls_heads = nn.ModuleList([nn.Linear(D, num_classes) for _ in range(self.NUM_DEC)])
+        # num_classes + 1: last index is the "no-object" / background class
+        self.cls_heads = nn.ModuleList([nn.Linear(D, num_classes + 1) for _ in range(self.NUM_DEC)])
         self.box_heads = nn.ModuleList([_MLP(D) for _ in range(self.NUM_DEC)])
 
         self._init_weights()
 
     def _init_weights(self):
         prior_prob = 0.01
-        bias = -math.log((1 - prior_prob) / prior_prob)
+        fg_bias = -math.log((1 - prior_prob) / prior_prob)
         for head in self.cls_heads:
-            nn.init.constant_(head.bias, bias)
+            # Foreground classes: low prior; background class: neutral (0)
+            nn.init.constant_(head.bias[:self.num_classes], fg_bias)
+            nn.init.constant_(head.bias[self.num_classes:], 0.0)
 
     # ── Forward ──────────────────────────────────────────────────────────────
 
@@ -337,7 +329,7 @@ class RTDETR(nn.Module):
         all_logits, all_boxes = self._decode(mem, pos)
 
         if self.training:
-            return self._compute_losses(all_logits, all_boxes, targets_t)
+            return self._compute_losses(all_logits, all_boxes, targets_t, images_t.image_sizes)
 
         # Use final decoder layer for inference
         return self._decode_predictions(
@@ -346,15 +338,14 @@ class RTDETR(nn.Module):
 
     # ── Loss ─────────────────────────────────────────────────────────────────
 
-    def _compute_losses(self, all_logits, all_boxes, targets):
+    def _compute_losses(self, all_logits, all_boxes, targets, image_sizes):
         total_cls = torch.tensor(0.0, device=all_logits[0].device)
         total_l1  = torch.tensor(0.0, device=all_logits[0].device)
         total_giou = torch.tensor(0.0, device=all_logits[0].device)
 
         num_layers = len(all_logits)
-        # Accumulate loss from each decoder layer (auxiliary losses)
         for logits, boxes in zip(all_logits, all_boxes):
-            lc, ll, lg = self._layer_loss(logits, boxes, targets)
+            lc, ll, lg = self._layer_loss(logits, boxes, targets, image_sizes)
             total_cls  = total_cls  + lc
             total_l1   = total_l1   + ll
             total_giou = total_giou + lg
@@ -366,7 +357,7 @@ class RTDETR(nn.Module):
             'loss_giou': total_giou * scale,
         }
 
-    def _layer_loss(self, logits, boxes, targets):
+    def _layer_loss(self, logits, boxes, targets, image_sizes):
         """Loss for one decoder layer output."""
         device = logits.device
         B = logits.shape[0]
@@ -374,24 +365,22 @@ class RTDETR(nn.Module):
         cls_losses, l1_losses, giou_losses = [], [], []
 
         for i, target in enumerate(targets):
-            gt_boxes  = target['boxes']    # (M, 4) xyxy absolute
+            gt_boxes  = target['boxes']    # (M, 4) xyxy absolute (resized image space)
             gt_labels = target['labels']   # (M,) 1-indexed
+            img_h, img_w = image_sizes[i]
 
             M = gt_boxes.shape[0]
-            pred_log = logits[i].detach()  # (Q, C) — matching is @no_grad
-            pred_box = boxes[i].detach()   # (Q, 4)
+            pred_log = logits[i].detach()
+            pred_box = boxes[i].detach()
 
-            # No-object classification loss for unmatched queries
-            # All queries are first marked as background
-            cls_target = torch.zeros(self.NUM_Q, dtype=torch.long, device=device)
+            # Unmatched queries target the dedicated background class (index = num_classes)
+            cls_target = torch.full((self.NUM_Q,), self.num_classes, dtype=torch.long, device=device)
 
             if M == 0:
-                cls_losses.append(
-                    F.cross_entropy(logits[i], cls_target)
-                )
+                cls_losses.append(F.cross_entropy(logits[i], cls_target))
                 continue
 
-            row, col = _match(pred_log, pred_box, gt_labels, gt_boxes, self.num_classes)
+            row, col = _match(pred_log, pred_box, gt_labels, gt_boxes, img_h, img_w)
             row = row.to(device)
             col = col.to(device)
 
@@ -399,14 +388,11 @@ class RTDETR(nn.Module):
             cls_target[row] = gt_labels[col] - 1
             cls_losses.append(F.cross_entropy(logits[i], cls_target))
 
-            # Box losses only for matched predictions
             if row.numel() > 0:
-                # L1 on normalised cxcywh
-                gt_norm = _xyxy_to_cxcywh_norm(gt_boxes[col], boxes[i])
+                gt_norm  = _xyxy_to_cxcywh_norm(gt_boxes[col], img_h, img_w)
                 l1_losses.append(F.l1_loss(boxes[i][row], gt_norm, reduction='sum'))
 
-                # GIoU
-                pred_abs = _cxcywh_to_xyxy_abs(boxes[i][row], gt_boxes[col])
+                pred_abs = _cxcywh_to_xyxy_abs(boxes[i][row], img_h, img_w)
                 giou = generalized_box_iou(pred_abs, gt_boxes[col])
                 giou_losses.append((1 - giou.diag()).sum())
                 num_pos += row.numel()
@@ -422,12 +408,15 @@ class RTDETR(nn.Module):
     def _decode_predictions(self, logits, boxes, images_t, original_sizes):
         """Convert final decoder output to detection dicts."""
         results = []
-        image_size = images_t.tensors.shape[-2:]
-        img_h, img_w = image_size
 
         for i in range(logits.shape[0]):
-            scores_all = logits[i].softmax(-1)          # (Q, C)
-            max_scores, labels = scores_all.max(-1)     # (Q,)
+            # Use per-image size (pre-padding), not padded batch tensor size.
+            # postprocess() rescales from image_sizes[i] → original_sizes[i].
+            img_h, img_w = images_t.image_sizes[i]
+
+            # Exclude background class (last index) from scoring
+            scores_all = logits[i, :, :self.num_classes].softmax(-1)  # (Q, C)
+            max_scores, labels = scores_all.max(-1)                    # (Q,)
 
             # Convert normalised cxcywh → absolute xyxy
             cx, cy, w, h = boxes[i].unbind(-1)
@@ -436,9 +425,9 @@ class RTDETR(nn.Module):
             x2 = (cx + w / 2) * img_w
             y2 = (cy + h / 2) * img_h
             abs_boxes = torch.stack([x1, y1, x2, y2], dim=-1)
-            abs_boxes = clip_boxes_to_image(abs_boxes, image_size)
+            abs_boxes = clip_boxes_to_image(abs_boxes, (img_h, img_w))
 
-            keep = max_scores > 0.05
+            keep = max_scores > 0.01
             abs_boxes_f = abs_boxes[keep]
             labels_f    = labels[keep] + 1          # 1-indexed
             scores_f    = max_scores[keep]

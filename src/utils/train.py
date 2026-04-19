@@ -67,6 +67,7 @@ def train(
     resume: Optional[str] = None,
     compute_detection_metrics: bool = True,
     metric_score_threshold: float = 0.01,
+    patience: int = 0,
 ) -> Dict[str, List[float]]:
     os.makedirs(checkpoint_dir, exist_ok=True)
 
@@ -87,6 +88,8 @@ def train(
 
     start_epoch = 0
     best_loss = float("inf")
+    best_map = -1.0
+    epochs_no_improve = 0
     history: Dict[str, List[float]] = {
         "train_loss": [], "val_loss": [],
         "map_50": [], "map_50_95": [],
@@ -132,18 +135,38 @@ def train(
                     f"Recall={metrics['recall']:.4f}, "
                     f"F1={metrics['f1']:.4f}"
                 )
-
-            is_best = val_loss < best_loss
-            if is_best:
-                best_loss = val_loss
-        else:
+                current_map = float(metrics["mAP@0.50"]) #type: ignore
+                is_best = current_map > best_map
+                if is_best:
+                    best_map = current_map
+                    epochs_no_improve = 0
+                else:
+                    epochs_no_improve += 1
+            else:
+                is_best = val_loss < best_loss
+                if is_best:
+                    best_loss = val_loss
+                    epochs_no_improve = 0
+                else:
+                    epochs_no_improve += 1
+        elif val_loader is None:
             is_best = train_loss < best_loss
             if is_best:
                 best_loss = train_loss
+                epochs_no_improve = 0
+            else:
+                epochs_no_improve += 1
 
         checkpoint_path = os.path.join(checkpoint_dir, f"epoch_{epoch}.pth")
         save_checkpoint(model, optimizer, epoch, best_loss, checkpoint_path, is_best)
 
-    print(f"\nTraining complete. Best validation loss: {best_loss:.4f}")
+        if patience > 0 and epochs_no_improve >= patience:
+            print(f"\nEarly stopping: no improvement for {patience} epochs.")
+            break
+
+    if best_map >= 0:
+        print(f"\nTraining complete. Best mAP@0.50: {best_map:.4f}")
+    else:
+        print(f"\nTraining complete. Best validation loss: {best_loss:.4f}")
     save_training_plot(history, save_dir=checkpoint_dir)
     return history

@@ -67,6 +67,7 @@ def main():
         resume=args.resume,
         compute_detection_metrics=not args.no_metrics,
         metric_score_threshold=args.score_threshold,
+        patience=args.patience,
     )
 
 
