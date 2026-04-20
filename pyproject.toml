@@ -5,7 +5,16 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "image>=1.5.33",
-    "torch>=2.11.0",
-    "torchvision>=0.26.0",
+  "torch",
+  "torchvision",
+  "torchaudio",
+  "numpy",
+  "opencv-python",
+  "pillow",
+  "matplotlib",
+  "tqdm",
+  "pyyaml",
+  "rich",
+  "scipy>=1.17.1",
 ]
+

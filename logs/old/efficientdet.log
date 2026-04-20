@@ -1,0 +1,735 @@
+coder@coder-sanderw-yesyes-759ccbcbb9-mzp47:~/computervisionprojectrepo$ uv run src/main.py --model efficientdet --epochs 50 --lr 0.005 --checkpoint-dir checkpoints_efficientdet
+Model: efficientdet  |  total params: 40.4M  trainable: 40.4M
+Starting training from epoch 0 to 50
+Device: cuda, Learning rate: 0.005
+
+==================================================
+Epoch 0/50
+==================================================
+Epoch 0, Batch 0/53, Loss: 19.8191, LR: 0.000500
+Epoch 0, Batch 10/53, Loss: 16.7346, LR: 0.000500
+Epoch 0, Batch 20/53, Loss: 10.3418, LR: 0.000500
+Epoch 0, Batch 30/53, Loss: 4.3146, LR: 0.000500
+Epoch 0, Batch 40/53, Loss: 3.1272, LR: 0.000500
+Epoch 0, Batch 50/53, Loss: 2.4155, LR: 0.000500
+
+Train Loss: 8.8302
+Val Loss: 3.1946
+mAP@0.50=0.0000, mAP@0.50:0.95=0.0000, Precision=0.0000, Recall=0.0000, F1=0.0000
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 1/50
+==================================================
+Epoch 1, Batch 0/53, Loss: 2.0603, LR: 0.000500
+Epoch 1, Batch 10/53, Loss: 1.9508, LR: 0.000500
+Epoch 1, Batch 20/53, Loss: 2.1704, LR: 0.000500
+Epoch 1, Batch 30/53, Loss: 2.6170, LR: 0.000500
+Epoch 1, Batch 40/53, Loss: 3.9904, LR: 0.000500
+Epoch 1, Batch 50/53, Loss: 1.9048, LR: 0.000500
+
+Train Loss: 2.5717
+Val Loss: 2.6508
+mAP@0.50=0.0000, mAP@0.50:0.95=0.0000, Precision=0.0001, Recall=0.0006, F1=0.0002
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 2/50
+==================================================
+Epoch 2, Batch 0/53, Loss: 2.1926, LR: 0.000498
+Epoch 2, Batch 10/53, Loss: 2.2547, LR: 0.000498
+Epoch 2, Batch 20/53, Loss: 2.1052, LR: 0.000498
+Epoch 2, Batch 30/53, Loss: 2.1559, LR: 0.000498
+Epoch 2, Batch 40/53, Loss: 1.6382, LR: 0.000498
+Epoch 2, Batch 50/53, Loss: 1.8153, LR: 0.000498
+
+Train Loss: 2.1286
+Val Loss: 2.1811
+mAP@0.50=0.0001, mAP@0.50:0.95=0.0000, Precision=0.0004, Recall=0.0037, F1=0.0007
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 3/50
+==================================================
+Epoch 3, Batch 0/53, Loss: 1.9043, LR: 0.000496
+Epoch 3, Batch 10/53, Loss: 1.6665, LR: 0.000496
+Epoch 3, Batch 20/53, Loss: 1.6314, LR: 0.000496
+Epoch 3, Batch 30/53, Loss: 1.6458, LR: 0.000496
+Epoch 3, Batch 40/53, Loss: 2.2657, LR: 0.000496
+Epoch 3, Batch 50/53, Loss: 1.8242, LR: 0.000496
+
+Train Loss: 1.8819
+Val Loss: 2.1236
+mAP@0.50=0.0003, mAP@0.50:0.95=0.0001, Precision=0.0012, Recall=0.0207, F1=0.0022
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 4/50
+==================================================
+Epoch 4, Batch 0/53, Loss: 1.6866, LR: 0.000492
+Epoch 4, Batch 10/53, Loss: 1.5915, LR: 0.000492
+Epoch 4, Batch 20/53, Loss: 1.8222, LR: 0.000492
+Epoch 4, Batch 30/53, Loss: 1.8174, LR: 0.000492
+Epoch 4, Batch 40/53, Loss: 1.8099, LR: 0.000492
+Epoch 4, Batch 50/53, Loss: 1.7425, LR: 0.000492
+
+Train Loss: 1.7588
+Val Loss: 1.9360
+mAP@0.50=0.0007, mAP@0.50:0.95=0.0001, Precision=0.0014, Recall=0.0337, F1=0.0027
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 5/50
+==================================================
+Epoch 5, Batch 0/53, Loss: 1.5100, LR: 0.000488
+Epoch 5, Batch 10/53, Loss: 1.7095, LR: 0.000488
+Epoch 5, Batch 20/53, Loss: 1.7671, LR: 0.000488
+Epoch 5, Batch 30/53, Loss: 1.6334, LR: 0.000488
+Epoch 5, Batch 40/53, Loss: 1.5961, LR: 0.000488
+Epoch 5, Batch 50/53, Loss: 1.6378, LR: 0.000488
+
+Train Loss: 1.8221
+Val Loss: 1.9997
+mAP@0.50=0.0009, mAP@0.50:0.95=0.0002, Precision=0.0022, Recall=0.0457, F1=0.0043
+
+==================================================
+Epoch 6/50
+==================================================
+Epoch 6, Batch 0/53, Loss: 1.8885, LR: 0.000482
+Epoch 6, Batch 10/53, Loss: 1.5709, LR: 0.000482
+Epoch 6, Batch 20/53, Loss: 1.9087, LR: 0.000482
+Epoch 6, Batch 30/53, Loss: 1.3788, LR: 0.000482
+Epoch 6, Batch 40/53, Loss: 1.4985, LR: 0.000482
+Epoch 6, Batch 50/53, Loss: 1.6062, LR: 0.000482
+
+Train Loss: 1.6416
+Val Loss: 1.9183
+mAP@0.50=0.0018, mAP@0.50:0.95=0.0004, Precision=0.0022, Recall=0.0491, F1=0.0043
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 7/50
+==================================================
+Epoch 7, Batch 0/53, Loss: 1.5623, LR: 0.000476
+Epoch 7, Batch 10/53, Loss: 2.6290, LR: 0.000476
+Epoch 7, Batch 20/53, Loss: 1.5030, LR: 0.000476
+Epoch 7, Batch 30/53, Loss: 1.6401, LR: 0.000476
+Epoch 7, Batch 40/53, Loss: 1.5063, LR: 0.000476
+Epoch 7, Batch 50/53, Loss: 1.6568, LR: 0.000476
+
+Train Loss: 1.6525
+Val Loss: 1.8571
+mAP@0.50=0.0011, mAP@0.50:0.95=0.0003, Precision=0.0028, Recall=0.0640, F1=0.0053
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 8/50
+==================================================
+Epoch 8, Batch 0/53, Loss: 1.3987, LR: 0.000469
+Epoch 8, Batch 10/53, Loss: 1.5428, LR: 0.000469
+Epoch 8, Batch 20/53, Loss: 1.5238, LR: 0.000469
+Epoch 8, Batch 30/53, Loss: 1.6904, LR: 0.000469
+Epoch 8, Batch 40/53, Loss: 1.5828, LR: 0.000469
+Epoch 8, Batch 50/53, Loss: 1.4754, LR: 0.000469
+
+Train Loss: 1.5707
+Val Loss: 1.8925
+mAP@0.50=0.0024, mAP@0.50:0.95=0.0006, Precision=0.0026, Recall=0.0633, F1=0.0050
+
+==================================================
+Epoch 9/50
+==================================================
+Epoch 9, Batch 0/53, Loss: 1.4079, LR: 0.000461
+Epoch 9, Batch 10/53, Loss: 1.5920, LR: 0.000461
+Epoch 9, Batch 20/53, Loss: 1.4905, LR: 0.000461
+Epoch 9, Batch 30/53, Loss: 1.3546, LR: 0.000461
+Epoch 9, Batch 40/53, Loss: 1.4263, LR: 0.000461
+Epoch 9, Batch 50/53, Loss: 1.5965, LR: 0.000461
+
+Train Loss: 1.6029
+Val Loss: 1.8256
+mAP@0.50=0.0023, mAP@0.50:0.95=0.0006, Precision=0.0037, Recall=0.0825, F1=0.0070
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 10/50
+==================================================
+Epoch 10, Batch 0/53, Loss: 1.4832, LR: 0.000452
+Epoch 10, Batch 10/53, Loss: 1.4164, LR: 0.000452
+Epoch 10, Batch 20/53, Loss: 1.3293, LR: 0.000452
+Epoch 10, Batch 30/53, Loss: 1.4164, LR: 0.000452
+Epoch 10, Batch 40/53, Loss: 1.6290, LR: 0.000452
+Epoch 10, Batch 50/53, Loss: 1.3602, LR: 0.000452
+
+Train Loss: 1.5191
+Val Loss: 1.8489
+mAP@0.50=0.0024, mAP@0.50:0.95=0.0005, Precision=0.0036, Recall=0.0949, F1=0.0070
+
+==================================================
+Epoch 11/50
+==================================================
+Epoch 11, Batch 0/53, Loss: 1.5130, LR: 0.000443
+Epoch 11, Batch 10/53, Loss: 1.4305, LR: 0.000443
+Epoch 11, Batch 20/53, Loss: 1.4259, LR: 0.000443
+Epoch 11, Batch 30/53, Loss: 1.3537, LR: 0.000443
+Epoch 11, Batch 40/53, Loss: 1.4987, LR: 0.000443
+Epoch 11, Batch 50/53, Loss: 1.8234, LR: 0.000443
+
+Train Loss: 1.4742
+Val Loss: 1.7817
+mAP@0.50=0.0040, mAP@0.50:0.95=0.0011, Precision=0.0048, Recall=0.1109, F1=0.0092
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 12/50
+==================================================
+Epoch 12, Batch 0/53, Loss: 1.4158, LR: 0.000432
+Epoch 12, Batch 10/53, Loss: 1.6421, LR: 0.000432
+Epoch 12, Batch 20/53, Loss: 1.3901, LR: 0.000432
+Epoch 12, Batch 30/53, Loss: 1.4983, LR: 0.000432
+Epoch 12, Batch 40/53, Loss: 1.5165, LR: 0.000432
+Epoch 12, Batch 50/53, Loss: 1.3726, LR: 0.000432
+
+Train Loss: 1.4562
+Val Loss: 1.7173
+mAP@0.50=0.0034, mAP@0.50:0.95=0.0009, Precision=0.0044, Recall=0.1023, F1=0.0084
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 13/50
+==================================================
+Epoch 13, Batch 0/53, Loss: 1.4195, LR: 0.000421
+Epoch 13, Batch 10/53, Loss: 3.1119, LR: 0.000421
+Epoch 13, Batch 20/53, Loss: 1.4970, LR: 0.000421
+Epoch 13, Batch 30/53, Loss: 1.2307, LR: 0.000421
+Epoch 13, Batch 40/53, Loss: 1.5048, LR: 0.000421
+Epoch 13, Batch 50/53, Loss: 1.3401, LR: 0.000421
+
+Train Loss: 1.4709
+Val Loss: 1.7036
+mAP@0.50=0.0029, mAP@0.50:0.95=0.0008, Precision=0.0051, Recall=0.1014, F1=0.0097
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 14/50
+==================================================
+Epoch 14, Batch 0/53, Loss: 1.3247, LR: 0.000410
+Epoch 14, Batch 10/53, Loss: 1.3832, LR: 0.000410
+Epoch 14, Batch 20/53, Loss: 1.4890, LR: 0.000410
+Epoch 14, Batch 30/53, Loss: 1.3364, LR: 0.000410
+Epoch 14, Batch 40/53, Loss: 1.4235, LR: 0.000410
+Epoch 14, Batch 50/53, Loss: 1.3135, LR: 0.000410
+
+Train Loss: 1.4376
+Val Loss: 1.6558
+mAP@0.50=0.0032, mAP@0.50:0.95=0.0009, Precision=0.0051, Recall=0.1072, F1=0.0098
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 15/50
+==================================================
+Epoch 15, Batch 0/53, Loss: 1.3439, LR: 0.000397
+Epoch 15, Batch 10/53, Loss: 1.3715, LR: 0.000397
+Epoch 15, Batch 20/53, Loss: 1.3484, LR: 0.000397
+Epoch 15, Batch 30/53, Loss: 1.3221, LR: 0.000397
+Epoch 15, Batch 40/53, Loss: 1.3370, LR: 0.000397
+Epoch 15, Batch 50/53, Loss: 1.4014, LR: 0.000397
+
+Train Loss: 1.4261
+Val Loss: 1.6411
+mAP@0.50=0.0050, mAP@0.50:0.95=0.0012, Precision=0.0058, Recall=0.1264, F1=0.0111
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 16/50
+==================================================
+Epoch 16, Batch 0/53, Loss: 1.3212, LR: 0.000384
+Epoch 16, Batch 10/53, Loss: 1.3276, LR: 0.000384
+Epoch 16, Batch 20/53, Loss: 1.1959, LR: 0.000384
+Epoch 16, Batch 30/53, Loss: 1.3133, LR: 0.000384
+Epoch 16, Batch 40/53, Loss: 1.4036, LR: 0.000384
+Epoch 16, Batch 50/53, Loss: 1.1807, LR: 0.000384
+
+Train Loss: 1.3548
+Val Loss: 1.6416
+mAP@0.50=0.0047, mAP@0.50:0.95=0.0012, Precision=0.0057, Recall=0.1310, F1=0.0108
+
+==================================================
+Epoch 17/50
+==================================================
+Epoch 17, Batch 0/53, Loss: 1.2121, LR: 0.000371
+Epoch 17, Batch 10/53, Loss: 1.6675, LR: 0.000371
+Epoch 17, Batch 20/53, Loss: 1.3417, LR: 0.000371
+Epoch 17, Batch 30/53, Loss: 1.3480, LR: 0.000371
+Epoch 17, Batch 40/53, Loss: 1.6475, LR: 0.000371
+Epoch 17, Batch 50/53, Loss: 1.1732, LR: 0.000371
+
+Train Loss: 1.3567
+Val Loss: 1.5929
+mAP@0.50=0.0043, mAP@0.50:0.95=0.0011, Precision=0.0056, Recall=0.1264, F1=0.0107
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 18/50
+==================================================
+Epoch 18, Batch 0/53, Loss: 1.1999, LR: 0.000357
+Epoch 18, Batch 10/53, Loss: 1.4409, LR: 0.000357
+Epoch 18, Batch 20/53, Loss: 1.1929, LR: 0.000357
+Epoch 18, Batch 30/53, Loss: 1.1361, LR: 0.000357
+Epoch 18, Batch 40/53, Loss: 1.2185, LR: 0.000357
+Epoch 18, Batch 50/53, Loss: 1.2605, LR: 0.000357
+
+Train Loss: 1.3218
+Val Loss: 1.5831
+mAP@0.50=0.0055, mAP@0.50:0.95=0.0014, Precision=0.0061, Recall=0.1384, F1=0.0117
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 19/50
+==================================================
+Epoch 19, Batch 0/53, Loss: 1.3693, LR: 0.000342
+Epoch 19, Batch 10/53, Loss: 1.1874, LR: 0.000342
+Epoch 19, Batch 20/53, Loss: 1.4251, LR: 0.000342
+Epoch 19, Batch 30/53, Loss: 1.2840, LR: 0.000342
+Epoch 19, Batch 40/53, Loss: 1.3273, LR: 0.000342
+Epoch 19, Batch 50/53, Loss: 1.3035, LR: 0.000342
+
+Train Loss: 1.2999
+Val Loss: 1.6469
+mAP@0.50=0.0055, mAP@0.50:0.95=0.0013, Precision=0.0057, Recall=0.1298, F1=0.0110
+
+==================================================
+Epoch 20/50
+==================================================
+Epoch 20, Batch 0/53, Loss: 1.1108, LR: 0.000328
+Epoch 20, Batch 10/53, Loss: 1.2440, LR: 0.000328
+Epoch 20, Batch 20/53, Loss: 1.2591, LR: 0.000328
+Epoch 20, Batch 30/53, Loss: 1.2724, LR: 0.000328
+Epoch 20, Batch 40/53, Loss: 1.3114, LR: 0.000328
+Epoch 20, Batch 50/53, Loss: 1.5747, LR: 0.000328
+
+Train Loss: 1.2980
+Val Loss: 1.5669
+mAP@0.50=0.0057, mAP@0.50:0.95=0.0014, Precision=0.0072, Recall=0.1452, F1=0.0137
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 21/50
+==================================================
+Epoch 21, Batch 0/53, Loss: 1.1768, LR: 0.000313
+Epoch 21, Batch 10/53, Loss: 1.2990, LR: 0.000313
+Epoch 21, Batch 20/53, Loss: 1.2425, LR: 0.000313
+Epoch 21, Batch 30/53, Loss: 1.1232, LR: 0.000313
+Epoch 21, Batch 40/53, Loss: 1.3110, LR: 0.000313
+Epoch 21, Batch 50/53, Loss: 1.3270, LR: 0.000313
+
+Train Loss: 1.2572
+Val Loss: 1.5970
+mAP@0.50=0.0055, mAP@0.50:0.95=0.0013, Precision=0.0062, Recall=0.1431, F1=0.0118
+
+==================================================
+Epoch 22/50
+==================================================
+Epoch 22, Batch 0/53, Loss: 1.4431, LR: 0.000297
+Epoch 22, Batch 10/53, Loss: 1.2608, LR: 0.000297
+Epoch 22, Batch 20/53, Loss: 1.3792, LR: 0.000297
+Epoch 22, Batch 30/53, Loss: 1.1781, LR: 0.000297
+Epoch 22, Batch 40/53, Loss: 1.1850, LR: 0.000297
+Epoch 22, Batch 50/53, Loss: 1.2148, LR: 0.000297
+
+Train Loss: 1.2875
+Val Loss: 1.5529
+mAP@0.50=0.0064, mAP@0.50:0.95=0.0017, Precision=0.0075, Recall=0.1610, F1=0.0143
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 23/50
+==================================================
+Epoch 23, Batch 0/53, Loss: 1.1558, LR: 0.000282
+Epoch 23, Batch 10/53, Loss: 1.3377, LR: 0.000282
+Epoch 23, Batch 20/53, Loss: 1.3130, LR: 0.000282
+Epoch 23, Batch 30/53, Loss: 1.5678, LR: 0.000282
+Epoch 23, Batch 40/53, Loss: 1.3902, LR: 0.000282
+Epoch 23, Batch 50/53, Loss: 1.2194, LR: 0.000282
+
+Train Loss: 1.2392
+Val Loss: 1.5568
+mAP@0.50=0.0057, mAP@0.50:0.95=0.0014, Precision=0.0069, Recall=0.1616, F1=0.0133
+
+==================================================
+Epoch 24/50
+==================================================
+Epoch 24, Batch 0/53, Loss: 1.0378, LR: 0.000266
+Epoch 24, Batch 10/53, Loss: 1.1350, LR: 0.000266
+Epoch 24, Batch 20/53, Loss: 1.1519, LR: 0.000266
+Epoch 24, Batch 30/53, Loss: 1.0753, LR: 0.000266
+Epoch 24, Batch 40/53, Loss: 1.2756, LR: 0.000266
+Epoch 24, Batch 50/53, Loss: 1.2482, LR: 0.000266
+
+Train Loss: 1.2310
+Val Loss: 1.5231
+mAP@0.50=0.0069, mAP@0.50:0.95=0.0016, Precision=0.0079, Recall=0.1687, F1=0.0150
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 25/50
+==================================================
+Epoch 25, Batch 0/53, Loss: 1.1933, LR: 0.000251
+Epoch 25, Batch 10/53, Loss: 1.1583, LR: 0.000251
+Epoch 25, Batch 20/53, Loss: 1.1891, LR: 0.000251
+Epoch 25, Batch 30/53, Loss: 1.1851, LR: 0.000251
+Epoch 25, Batch 40/53, Loss: 1.1715, LR: 0.000251
+Epoch 25, Batch 50/53, Loss: 1.4109, LR: 0.000251
+
+Train Loss: 1.2239
+Val Loss: 1.5144
+mAP@0.50=0.0065, mAP@0.50:0.95=0.0017, Precision=0.0086, Recall=0.1715, F1=0.0163
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 26/50
+==================================================
+Epoch 26, Batch 0/53, Loss: 1.3535, LR: 0.000235
+Epoch 26, Batch 10/53, Loss: 1.1792, LR: 0.000235
+Epoch 26, Batch 20/53, Loss: 1.2532, LR: 0.000235
+Epoch 26, Batch 30/53, Loss: 1.2052, LR: 0.000235
+Epoch 26, Batch 40/53, Loss: 1.1475, LR: 0.000235
+Epoch 26, Batch 50/53, Loss: 1.2906, LR: 0.000235
+
+Train Loss: 1.2057
+Val Loss: 1.5176
+mAP@0.50=0.0075, mAP@0.50:0.95=0.0019, Precision=0.0082, Recall=0.1743, F1=0.0156
+
+==================================================
+Epoch 27/50
+==================================================
+Epoch 27, Batch 0/53, Loss: 1.2090, LR: 0.000219
+Epoch 27, Batch 10/53, Loss: 1.2875, LR: 0.000219
+Epoch 27, Batch 20/53, Loss: 1.3232, LR: 0.000219
+Epoch 27, Batch 30/53, Loss: 1.1742, LR: 0.000219
+Epoch 27, Batch 40/53, Loss: 1.2618, LR: 0.000219
+Epoch 27, Batch 50/53, Loss: 1.2244, LR: 0.000219
+
+Train Loss: 1.2312
+Val Loss: 1.5369
+mAP@0.50=0.0073, mAP@0.50:0.95=0.0018, Precision=0.0086, Recall=0.1715, F1=0.0164
+
+==================================================
+Epoch 28/50
+==================================================
+Epoch 28, Batch 0/53, Loss: 1.1405, LR: 0.000204
+Epoch 28, Batch 10/53, Loss: 1.0643, LR: 0.000204
+Epoch 28, Batch 20/53, Loss: 1.1455, LR: 0.000204
+Epoch 28, Batch 30/53, Loss: 1.1901, LR: 0.000204
+Epoch 28, Batch 40/53, Loss: 1.1972, LR: 0.000204
+Epoch 28, Batch 50/53, Loss: 1.1744, LR: 0.000204
+
+Train Loss: 1.2017
+Val Loss: 1.5068
+mAP@0.50=0.0074, mAP@0.50:0.95=0.0019, Precision=0.0083, Recall=0.1731, F1=0.0158
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 29/50
+==================================================
+Epoch 29, Batch 0/53, Loss: 0.9785, LR: 0.000188
+Epoch 29, Batch 10/53, Loss: 1.0752, LR: 0.000188
+Epoch 29, Batch 20/53, Loss: 2.0693, LR: 0.000188
+Epoch 29, Batch 30/53, Loss: 1.2091, LR: 0.000188
+Epoch 29, Batch 40/53, Loss: 1.1465, LR: 0.000188
+Epoch 29, Batch 50/53, Loss: 1.1926, LR: 0.000188
+
+Train Loss: 1.2307
+Val Loss: 1.4901
+mAP@0.50=0.0079, mAP@0.50:0.95=0.0021, Precision=0.0086, Recall=0.1771, F1=0.0165
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 30/50
+==================================================
+Epoch 30, Batch 0/53, Loss: 1.0820, LR: 0.000173
+Epoch 30, Batch 10/53, Loss: 1.0505, LR: 0.000173
+Epoch 30, Batch 20/53, Loss: 1.1301, LR: 0.000173
+Epoch 30, Batch 30/53, Loss: 1.1702, LR: 0.000173
+Epoch 30, Batch 40/53, Loss: 1.0956, LR: 0.000173
+Epoch 30, Batch 50/53, Loss: 1.3873, LR: 0.000173
+
+Train Loss: 1.2012
+Val Loss: 1.5041
+mAP@0.50=0.0066, mAP@0.50:0.95=0.0016, Precision=0.0086, Recall=0.1755, F1=0.0164
+
+==================================================
+Epoch 31/50
+==================================================
+Epoch 31, Batch 0/53, Loss: 1.3684, LR: 0.000159
+Epoch 31, Batch 10/53, Loss: 1.1618, LR: 0.000159
+Epoch 31, Batch 20/53, Loss: 1.2748, LR: 0.000159
+Epoch 31, Batch 30/53, Loss: 1.3409, LR: 0.000159
+Epoch 31, Batch 40/53, Loss: 1.5792, LR: 0.000159
+Epoch 31, Batch 50/53, Loss: 1.2383, LR: 0.000159
+
+Train Loss: 1.1717
+Val Loss: 1.4830
+mAP@0.50=0.0079, mAP@0.50:0.95=0.0021, Precision=0.0092, Recall=0.1962, F1=0.0176
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 32/50
+==================================================
+Epoch 32, Batch 0/53, Loss: 1.1084, LR: 0.000144
+Epoch 32, Batch 10/53, Loss: 1.1025, LR: 0.000144
+Epoch 32, Batch 20/53, Loss: 1.1908, LR: 0.000144
+Epoch 32, Batch 30/53, Loss: 1.2317, LR: 0.000144
+Epoch 32, Batch 40/53, Loss: 1.2234, LR: 0.000144
+Epoch 32, Batch 50/53, Loss: 1.1835, LR: 0.000144
+
+Train Loss: 1.1737
+Val Loss: 1.4805
+mAP@0.50=0.0083, mAP@0.50:0.95=0.0023, Precision=0.0089, Recall=0.1867, F1=0.0170
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 33/50
+==================================================
+Epoch 33, Batch 0/53, Loss: 1.1523, LR: 0.000130
+Epoch 33, Batch 10/53, Loss: 1.0963, LR: 0.000130
+Epoch 33, Batch 20/53, Loss: 1.1578, LR: 0.000130
+Epoch 33, Batch 30/53, Loss: 1.1351, LR: 0.000130
+Epoch 33, Batch 40/53, Loss: 1.1315, LR: 0.000130
+Epoch 33, Batch 50/53, Loss: 1.0220, LR: 0.000130
+
+Train Loss: 1.1512
+Val Loss: 1.4850
+mAP@0.50=0.0081, mAP@0.50:0.95=0.0021, Precision=0.0086, Recall=0.1873, F1=0.0165
+
+==================================================
+Epoch 34/50
+==================================================
+Epoch 34, Batch 0/53, Loss: 1.0769, LR: 0.000117
+Epoch 34, Batch 10/53, Loss: 1.1660, LR: 0.000117
+Epoch 34, Batch 20/53, Loss: 1.2235, LR: 0.000117
+Epoch 34, Batch 30/53, Loss: 1.2237, LR: 0.000117
+Epoch 34, Batch 40/53, Loss: 1.1001, LR: 0.000117
+Epoch 34, Batch 50/53, Loss: 1.2115, LR: 0.000117
+
+Train Loss: 1.1473
+Val Loss: 1.4797
+mAP@0.50=0.0098, mAP@0.50:0.95=0.0027, Precision=0.0093, Recall=0.1972, F1=0.0178
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 35/50
+==================================================
+Epoch 35, Batch 0/53, Loss: 1.1114, LR: 0.000104
+Epoch 35, Batch 10/53, Loss: 1.1460, LR: 0.000104
+Epoch 35, Batch 20/53, Loss: 1.2816, LR: 0.000104
+Epoch 35, Batch 30/53, Loss: 1.1804, LR: 0.000104
+Epoch 35, Batch 40/53, Loss: 1.2337, LR: 0.000104
+Epoch 35, Batch 50/53, Loss: 1.0768, LR: 0.000104
+
+Train Loss: 1.1296
+Val Loss: 1.4799
+mAP@0.50=0.0094, mAP@0.50:0.95=0.0026, Precision=0.0093, Recall=0.1947, F1=0.0177
+
+==================================================
+Epoch 36/50
+==================================================
+Epoch 36, Batch 0/53, Loss: 1.3288, LR: 0.000091
+Epoch 36, Batch 10/53, Loss: 1.1519, LR: 0.000091
+Epoch 36, Batch 20/53, Loss: 1.2988, LR: 0.000091
+Epoch 36, Batch 30/53, Loss: 0.9892, LR: 0.000091
+Epoch 36, Batch 40/53, Loss: 1.2492, LR: 0.000091
+Epoch 36, Batch 50/53, Loss: 1.0479, LR: 0.000091
+
+Train Loss: 1.1441
+Val Loss: 1.4686
+mAP@0.50=0.0093, mAP@0.50:0.95=0.0026, Precision=0.0098, Recall=0.2012, F1=0.0187
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 37/50
+==================================================
+Epoch 37, Batch 0/53, Loss: 1.0141, LR: 0.000080
+Epoch 37, Batch 10/53, Loss: 1.0436, LR: 0.000080
+Epoch 37, Batch 20/53, Loss: 1.0697, LR: 0.000080
+Epoch 37, Batch 30/53, Loss: 1.1750, LR: 0.000080
+Epoch 37, Batch 40/53, Loss: 0.9851, LR: 0.000080
+Epoch 37, Batch 50/53, Loss: 1.1297, LR: 0.000080
+
+Train Loss: 1.1419
+Val Loss: 1.4707
+mAP@0.50=0.0100, mAP@0.50:0.95=0.0028, Precision=0.0100, Recall=0.2021, F1=0.0190
+
+==================================================
+Epoch 38/50
+==================================================
+Epoch 38, Batch 0/53, Loss: 1.1589, LR: 0.000069
+Epoch 38, Batch 10/53, Loss: 1.2476, LR: 0.000069
+Epoch 38, Batch 20/53, Loss: 1.1102, LR: 0.000069
+Epoch 38, Batch 30/53, Loss: 1.1167, LR: 0.000069
+Epoch 38, Batch 40/53, Loss: 1.2191, LR: 0.000069
+Epoch 38, Batch 50/53, Loss: 1.0677, LR: 0.000069
+
+Train Loss: 1.1323
+Val Loss: 1.4623
+mAP@0.50=0.0091, mAP@0.50:0.95=0.0026, Precision=0.0099, Recall=0.1999, F1=0.0189
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 39/50
+==================================================
+Epoch 39, Batch 0/53, Loss: 1.0410, LR: 0.000058
+Epoch 39, Batch 10/53, Loss: 1.0950, LR: 0.000058
+Epoch 39, Batch 20/53, Loss: 1.2135, LR: 0.000058
+Epoch 39, Batch 30/53, Loss: 1.0671, LR: 0.000058
+Epoch 39, Batch 40/53, Loss: 0.9912, LR: 0.000058
+Epoch 39, Batch 50/53, Loss: 2.2131, LR: 0.000058
+
+Train Loss: 1.1421
+Val Loss: 1.4610
+mAP@0.50=0.0090, mAP@0.50:0.95=0.0026, Precision=0.0099, Recall=0.2009, F1=0.0188
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 40/50
+==================================================
+Epoch 40, Batch 0/53, Loss: 1.0004, LR: 0.000049
+Epoch 40, Batch 10/53, Loss: 1.0327, LR: 0.000049
+Epoch 40, Batch 20/53, Loss: 1.0482, LR: 0.000049
+Epoch 40, Batch 30/53, Loss: 1.1500, LR: 0.000049
+Epoch 40, Batch 40/53, Loss: 1.2256, LR: 0.000049
+Epoch 40, Batch 50/53, Loss: 1.0414, LR: 0.000049
+
+Train Loss: 1.1563
+Val Loss: 1.4535
+mAP@0.50=0.0094, mAP@0.50:0.95=0.0027, Precision=0.0101, Recall=0.2055, F1=0.0192
+Saved best model to checkpoints_efficientdet/best_model.pth
+
+==================================================
+Epoch 41/50
+==================================================
+Epoch 41, Batch 0/53, Loss: 1.1753, LR: 0.000040
+Epoch 41, Batch 10/53, Loss: 1.2991, LR: 0.000040
+Epoch 41, Batch 20/53, Loss: 1.0333, LR: 0.000040
+Epoch 41, Batch 30/53, Loss: 1.1458, LR: 0.000040
+Epoch 41, Batch 40/53, Loss: 1.0387, LR: 0.000040
+Epoch 41, Batch 50/53, Loss: 1.0948, LR: 0.000040
+
+Train Loss: 1.1204
+Val Loss: 1.4577
+mAP@0.50=0.0093, mAP@0.50:0.95=0.0027, Precision=0.0096, Recall=0.2018, F1=0.0182
+
+==================================================
+Epoch 42/50
+==================================================
+Epoch 42, Batch 0/53, Loss: 1.2115, LR: 0.000032
+Epoch 42, Batch 10/53, Loss: 1.0148, LR: 0.000032
+Epoch 42, Batch 20/53, Loss: 1.2435, LR: 0.000032
+Epoch 42, Batch 30/53, Loss: 1.0113, LR: 0.000032
+Epoch 42, Batch 40/53, Loss: 1.1075, LR: 0.000032
+Epoch 42, Batch 50/53, Loss: 1.0486, LR: 0.000032
+
+Train Loss: 1.1335
+Val Loss: 1.4553
+mAP@0.50=0.0099, mAP@0.50:0.95=0.0028, Precision=0.0102, Recall=0.2067, F1=0.0194
+
+==================================================
+Epoch 43/50
+==================================================
+Epoch 43, Batch 0/53, Loss: 1.2595, LR: 0.000025
+Epoch 43, Batch 10/53, Loss: 1.0208, LR: 0.000025
+Epoch 43, Batch 20/53, Loss: 0.9584, LR: 0.000025
+Epoch 43, Batch 30/53, Loss: 1.0669, LR: 0.000025
+Epoch 43, Batch 40/53, Loss: 1.0901, LR: 0.000025
+Epoch 43, Batch 50/53, Loss: 1.2581, LR: 0.000025
+
+Train Loss: 1.1365
+Val Loss: 1.4550
+mAP@0.50=0.0096, mAP@0.50:0.95=0.0027, Precision=0.0097, Recall=0.2024, F1=0.0185
+
+==================================================
+Epoch 44/50
+==================================================
+Epoch 44, Batch 0/53, Loss: 1.2295, LR: 0.000019
+Epoch 44, Batch 10/53, Loss: 1.1530, LR: 0.000019
+Epoch 44, Batch 20/53, Loss: 1.1344, LR: 0.000019
+Epoch 44, Batch 30/53, Loss: 1.1212, LR: 0.000019
+Epoch 44, Batch 40/53, Loss: 1.3237, LR: 0.000019
+Epoch 44, Batch 50/53, Loss: 1.0000, LR: 0.000019
+
+Train Loss: 1.1228
+Val Loss: 1.4553
+mAP@0.50=0.0100, mAP@0.50:0.95=0.0028, Precision=0.0099, Recall=0.2040, F1=0.0189
+
+==================================================
+Epoch 45/50
+==================================================
+Epoch 45, Batch 0/53, Loss: 1.1974, LR: 0.000013
+Epoch 45, Batch 10/53, Loss: 0.9103, LR: 0.000013
+Epoch 45, Batch 20/53, Loss: 1.1411, LR: 0.000013
+Epoch 45, Batch 30/53, Loss: 1.1919, LR: 0.000013
+Epoch 45, Batch 40/53, Loss: 0.9781, LR: 0.000013
+Epoch 45, Batch 50/53, Loss: 1.1132, LR: 0.000013
+
+Train Loss: 1.1276
+Val Loss: 1.4550
+mAP@0.50=0.0099, mAP@0.50:0.95=0.0029, Precision=0.0096, Recall=0.2064, F1=0.0184
+
+==================================================
+Epoch 46/50
+==================================================
+Epoch 46, Batch 0/53, Loss: 1.1168, LR: 0.000009
+Epoch 46, Batch 10/53, Loss: 1.0188, LR: 0.000009
+Epoch 46, Batch 20/53, Loss: 1.0192, LR: 0.000009
+Epoch 46, Batch 30/53, Loss: 1.0210, LR: 0.000009
+Epoch 46, Batch 40/53, Loss: 0.9984, LR: 0.000009
+Epoch 46, Batch 50/53, Loss: 1.0370, LR: 0.000009
+
+Train Loss: 1.1190
+Val Loss: 1.4542
+mAP@0.50=0.0098, mAP@0.50:0.95=0.0028, Precision=0.0100, Recall=0.2052, F1=0.0191
+
+==================================================
+Epoch 47/50
+==================================================
+Epoch 47, Batch 0/53, Loss: 1.1341, LR: 0.000005
+Epoch 47, Batch 10/53, Loss: 1.3004, LR: 0.000005
+Epoch 47, Batch 20/53, Loss: 1.0456, LR: 0.000005
+Epoch 47, Batch 30/53, Loss: 1.1104, LR: 0.000005
+Epoch 47, Batch 40/53, Loss: 1.0073, LR: 0.000005
+Epoch 47, Batch 50/53, Loss: 1.0423, LR: 0.000005
+
+Train Loss: 1.1214
+Val Loss: 1.4539
+mAP@0.50=0.0100, mAP@0.50:0.95=0.0028, Precision=0.0098, Recall=0.2064, F1=0.0187
+
+==================================================
+Epoch 48/50
+==================================================
+Epoch 48, Batch 0/53, Loss: 1.0220, LR: 0.000003
+Epoch 48, Batch 10/53, Loss: 1.2157, LR: 0.000003
+Epoch 48, Batch 20/53, Loss: 1.2069, LR: 0.000003
+Epoch 48, Batch 30/53, Loss: 1.0638, LR: 0.000003
+Epoch 48, Batch 40/53, Loss: 1.0500, LR: 0.000003
+Epoch 48, Batch 50/53, Loss: 1.2236, LR: 0.000003
+
+Train Loss: 1.1091
+Val Loss: 1.4542
+mAP@0.50=0.0100, mAP@0.50:0.95=0.0028, Precision=0.0100, Recall=0.2064, F1=0.0192
+
+==================================================
+Epoch 49/50
+==================================================
+Epoch 49, Batch 0/53, Loss: 1.1430, LR: 0.000001
+Epoch 49, Batch 10/53, Loss: 0.9261, LR: 0.000001
+Epoch 49, Batch 20/53, Loss: 1.0371, LR: 0.000001
+Epoch 49, Batch 30/53, Loss: 1.2837, LR: 0.000001
+Epoch 49, Batch 40/53, Loss: 1.2051, LR: 0.000001
+Epoch 49, Batch 50/53, Loss: 1.0350, LR: 0.000001
+
+Train Loss: 1.1169
+Val Loss: 1.4543
+mAP@0.50=0.0099, mAP@0.50:0.95=0.0028, Precision=0.0101, Recall=0.2067, F1=0.0192
+
+Training complete. Best validation loss: 1.4535
+Training plot saved to checkpoints_efficientdet/training_history.png
