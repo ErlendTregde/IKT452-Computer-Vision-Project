@@ -4,7 +4,7 @@ Starting training from epoch 0 to 150
 Device: cuda, Learning rate: 0.0005
 
 ==================================================
-Epoch 0/150
+Epoch 0/50
 ==================================================
 Epoch 0, Batch 0/422, Loss: 7.4210, LR: 0.000050
 Epoch 0, Batch 10/422, Loss: 3.2957, LR: 0.000050
@@ -56,7 +56,7 @@ mAP@0.50=0.3300, mAP@0.50:0.95=0.1617, Precision=0.4800, Recall=0.5488, F1=0.512
 Saved best model to aug_checkpoints_fpn/best_model.pth
 
 ==================================================
-Epoch 1/150
+Epoch 1/50
 ==================================================
 Epoch 1, Batch 0/422, Loss: 1.3027, LR: 0.000050
 Epoch 1, Batch 10/422, Loss: 1.0245, LR: 0.000050
@@ -108,7 +108,7 @@ mAP@0.50=0.4879, mAP@0.50:0.95=0.2657, Precision=0.5800, Recall=0.6632, F1=0.618
 Saved best model to aug_checkpoints_fpn/best_model.pth
 
 ==================================================
-Epoch 2/150
+Epoch 2/50
 ==================================================
 Epoch 2, Batch 0/422, Loss: 0.7038, LR: 0.000050
 Epoch 2, Batch 10/422, Loss: 0.8408, LR: 0.000050
@@ -160,7 +160,7 @@ mAP@0.50=0.5482, mAP@0.50:0.95=0.3141, Precision=0.6097, Recall=0.6972, F1=0.650
 Saved best model to aug_checkpoints_fpn/best_model.pth
 
 ==================================================
-Epoch 3/150
+Epoch 3/50
 ==================================================
 Epoch 3, Batch 0/422, Loss: 0.6904, LR: 0.000050
 Epoch 3, Batch 10/422, Loss: 0.8176, LR: 0.000050
@@ -211,7 +211,7 @@ Val Loss: 1.0343
 mAP@0.50=0.5718, mAP@0.50:0.95=0.3182, Precision=0.6181, Recall=0.7067, F1=0.6595
 
 ==================================================
-Epoch 4/150
+Epoch 4/50
 ==================================================
 Epoch 4, Batch 0/422, Loss: 0.5789, LR: 0.000050
 Epoch 4, Batch 10/422, Loss: 0.7695, LR: 0.000050
@@ -262,7 +262,7 @@ Val Loss: 1.0750
 mAP@0.50=0.5828, mAP@0.50:0.95=0.3320, Precision=0.6203, Recall=0.7092, F1=0.6618
 
 ==================================================
-Epoch 5/150
+Epoch 5/50
 ==================================================
 Epoch 5, Batch 0/422, Loss: 0.6889, LR: 0.000050
 Epoch 5, Batch 10/422, Loss: 0.4984, LR: 0.000050
@@ -313,7 +313,7 @@ Val Loss: 1.1124
 mAP@0.50=0.5939, mAP@0.50:0.95=0.3425, Precision=0.6235, Recall=0.7129, F1=0.6652
 
 ==================================================
-Epoch 6/150
+Epoch 6/50
 ==================================================
 Epoch 6, Batch 0/422, Loss: 0.6929, LR: 0.000050
 Epoch 6, Batch 10/422, Loss: 0.5987, LR: 0.000050
@@ -364,7 +364,7 @@ Val Loss: 1.1273
 mAP@0.50=0.5743, mAP@0.50:0.95=0.3320, Precision=0.6180, Recall=0.7033, F1=0.6579
 
 ==================================================
-Epoch 7/150
+Epoch 7/50
 ==================================================
 Epoch 7, Batch 0/422, Loss: 0.5652, LR: 0.000050
 Epoch 7, Batch 10/422, Loss: 0.3894, LR: 0.000050
@@ -415,7 +415,7 @@ Val Loss: 1.0871
 mAP@0.50=0.5871, mAP@0.50:0.95=0.3497, Precision=0.6269, Recall=0.7160, F1=0.6685
 
 ==================================================
-Epoch 8/150
+Epoch 8/50
 ==================================================
 Epoch 8, Batch 0/422, Loss: 0.4824, LR: 0.000050
 Epoch 8, Batch 10/422, Loss: 0.6204, LR: 0.000050
@@ -466,7 +466,7 @@ Val Loss: 1.1786
 mAP@0.50=0.5757, mAP@0.50:0.95=0.3364, Precision=0.6191, Recall=0.7058, F1=0.6596
 
 ==================================================
-Epoch 9/150
+Epoch 9/50
 ==================================================
 Epoch 9, Batch 0/422, Loss: 0.4672, LR: 0.000050
 Epoch 9, Batch 10/422, Loss: 0.5101, LR: 0.000050
@@ -517,7 +517,7 @@ Val Loss: 1.1697
 mAP@0.50=0.5940, mAP@0.50:0.95=0.3478, Precision=0.6303, Recall=0.7166, F1=0.6707
 
 ==================================================
-Epoch 10/150
+Epoch 10/50
 ==================================================
 Epoch 10, Batch 0/422, Loss: 0.4042, LR: 0.000049
 Epoch 10, Batch 10/422, Loss: 0.4554, LR: 0.000049
@@ -568,7 +568,7 @@ Val Loss: 1.2088
 mAP@0.50=0.5857, mAP@0.50:0.95=0.3438, Precision=0.6269, Recall=0.7089, F1=0.6654
 
 ==================================================
-Epoch 11/150
+Epoch 11/50
 ==================================================
 Epoch 11, Batch 0/422, Loss: 0.3512, LR: 0.000049
 Epoch 11, Batch 10/422, Loss: 0.3553, LR: 0.000049
@@ -619,7 +619,7 @@ Val Loss: 1.1749
 mAP@0.50=0.5865, mAP@0.50:0.95=0.3510, Precision=0.6278, Recall=0.7098, F1=0.6663
 
 ==================================================
-Epoch 12/150
+Epoch 12/50
 ==================================================
 Epoch 12, Batch 0/422, Loss: 0.4462, LR: 0.000049
 Epoch 12, Batch 10/422, Loss: 0.3958, LR: 0.000049
@@ -670,7 +670,7 @@ Val Loss: 1.2837
 mAP@0.50=0.6009, mAP@0.50:0.95=0.3580, Precision=0.6367, Recall=0.7203, F1=0.6759
 
 ==================================================
-Epoch 13/150
+Epoch 13/50
 ==================================================
 Epoch 13, Batch 0/422, Loss: 0.4400, LR: 0.000049
 Epoch 13, Batch 10/422, Loss: 0.4545, LR: 0.000049
@@ -721,7 +721,7 @@ Val Loss: 1.2164
 mAP@0.50=0.6044, mAP@0.50:0.95=0.3577, Precision=0.6336, Recall=0.7203, F1=0.6742
 
 ==================================================
-Epoch 14/150
+Epoch 14/50
 ==================================================
 Epoch 14, Batch 0/422, Loss: 0.4078, LR: 0.000049
 Epoch 14, Batch 10/422, Loss: 0.2774, LR: 0.000049
@@ -772,7 +772,7 @@ Val Loss: 1.3507
 mAP@0.50=0.5839, mAP@0.50:0.95=0.3386, Precision=0.6276, Recall=0.7077, F1=0.6652
 
 ==================================================
-Epoch 15/150
+Epoch 15/50
 ==================================================
 Epoch 15, Batch 0/422, Loss: 0.2573, LR: 0.000049
 Epoch 15, Batch 10/422, Loss: 0.4377, LR: 0.000049
@@ -823,7 +823,7 @@ Val Loss: 1.2176
 mAP@0.50=0.6080, mAP@0.50:0.95=0.3577, Precision=0.6444, Recall=0.7213, F1=0.6807
 
 ==================================================
-Epoch 16/150
+Epoch 16/50
 ==================================================
 Epoch 16, Batch 0/422, Loss: 0.3271, LR: 0.000049
 Epoch 16, Batch 10/422, Loss: 0.3688, LR: 0.000049
@@ -874,7 +874,7 @@ Val Loss: 1.3660
 mAP@0.50=0.5825, mAP@0.50:0.95=0.3467, Precision=0.6396, Recall=0.7114, F1=0.6736
 
 ==================================================
-Epoch 17/150
+Epoch 17/50
 ==================================================
 Epoch 17, Batch 0/422, Loss: 0.3233, LR: 0.000048
 Epoch 17, Batch 10/422, Loss: 0.3053, LR: 0.000048
@@ -925,7 +925,7 @@ Val Loss: 1.1919
 mAP@0.50=0.6028, mAP@0.50:0.95=0.3607, Precision=0.6426, Recall=0.7228, F1=0.6803
 
 ==================================================
-Epoch 18/150
+Epoch 18/50
 ==================================================
 Epoch 18, Batch 0/422, Loss: 0.3815, LR: 0.000048
 Epoch 18, Batch 10/422, Loss: 0.2844, LR: 0.000048
@@ -976,7 +976,7 @@ Val Loss: 1.3956
 mAP@0.50=0.6008, mAP@0.50:0.95=0.3596, Precision=0.6397, Recall=0.7145, F1=0.6750
 
 ==================================================
-Epoch 19/150
+Epoch 19/50
 ==================================================
 Epoch 19, Batch 0/422, Loss: 0.2790, LR: 0.000048
 Epoch 19, Batch 10/422, Loss: 0.2475, LR: 0.000048
@@ -1027,7 +1027,7 @@ Val Loss: 1.3509
 mAP@0.50=0.6008, mAP@0.50:0.95=0.3621, Precision=0.6456, Recall=0.7154, F1=0.6787
 
 ==================================================
-Epoch 20/150
+Epoch 20/50
 ==================================================
 Epoch 20, Batch 0/422, Loss: 0.2959, LR: 0.000048
 Epoch 20, Batch 10/422, Loss: 0.2432, LR: 0.000048
@@ -1076,3 +1076,1482 @@ Epoch 20, Batch 420/422, Loss: 0.3693, LR: 0.000048
 Train Loss: 0.2783
 Val Loss: 1.3693
 mAP@0.50=0.6032, mAP@0.50:0.95=0.3567, Precision=0.6424, Recall=0.7213, F1=0.6796
+
+==================================================
+Epoch 21/50
+==================================================
+Epoch 21, Batch 0/422, Loss: 0.273, LR: 0.000048
+Epoch 21, Batch 10/422, Loss: 0.3153, LR: 0.000048
+Epoch 21, Batch 20/422, Loss: 0.4041, LR: 0.000048
+Epoch 21, Batch 30/422, Loss: 0.3923, LR: 0.000048
+Epoch 21, Batch 40/422, Loss: 0.2538, LR: 0.000048
+Epoch 21, Batch 50/422, Loss: 0.2457, LR: 0.000048
+Epoch 21, Batch 60/422, Loss: 0.3525, LR: 0.000048
+Epoch 21, Batch 70/422, Loss: 0.2222, LR: 0.000048
+Epoch 21, Batch 80/422, Loss: 0.385, LR: 0.000048
+Epoch 21, Batch 90/422, Loss: 0.2277, LR: 0.000048
+Epoch 21, Batch 100/422, Loss: 0.2496, LR: 0.000048
+Epoch 21, Batch 110/422, Loss: 0.3389, LR: 0.000048
+Epoch 21, Batch 120/422, Loss: 0.3878, LR: 0.000048
+Epoch 21, Batch 130/422, Loss: 0.2278, LR: 0.000048
+Epoch 21, Batch 140/422, Loss: 0.2943, LR: 0.000048
+Epoch 21, Batch 150/422, Loss: 0.3208, LR: 0.000048
+Epoch 21, Batch 160/422, Loss: 0.3618, LR: 0.000048
+Epoch 21, Batch 170/422, Loss: 0.4335, LR: 0.000048
+Epoch 21, Batch 180/422, Loss: 0.2986, LR: 0.000048
+Epoch 21, Batch 190/422, Loss: 0.3924, LR: 0.000048
+Epoch 21, Batch 200/422, Loss: 0.3148, LR: 0.000048
+Epoch 21, Batch 210/422, Loss: 0.3232, LR: 0.000048
+Epoch 21, Batch 220/422, Loss: 0.3577, LR: 0.000048
+Epoch 21, Batch 230/422, Loss: 0.339, LR: 0.000048
+Epoch 21, Batch 240/422, Loss: 0.3727, LR: 0.000048
+Epoch 21, Batch 250/422, Loss: 0.2827, LR: 0.000048
+Epoch 21, Batch 260/422, Loss: 0.3117, LR: 0.000048
+Epoch 21, Batch 270/422, Loss: 0.271, LR: 0.000048
+Epoch 21, Batch 280/422, Loss: 0.2862, LR: 0.000048
+Epoch 21, Batch 290/422, Loss: 0.3964, LR: 0.000048
+Epoch 21, Batch 300/422, Loss: 0.4059, LR: 0.000048
+Epoch 21, Batch 310/422, Loss: 0.2735, LR: 0.000048
+Epoch 21, Batch 320/422, Loss: 0.3822, LR: 0.000048
+Epoch 21, Batch 330/422, Loss: 0.3682, LR: 0.000048
+Epoch 21, Batch 340/422, Loss: 0.3024, LR: 0.000048
+Epoch 21, Batch 350/422, Loss: 0.3373, LR: 0.000048
+Epoch 21, Batch 360/422, Loss: 0.4083, LR: 0.000048
+Epoch 21, Batch 370/422, Loss: 0.4066, LR: 0.000048
+Epoch 21, Batch 380/422, Loss: 0.3499, LR: 0.000048
+Epoch 21, Batch 390/422, Loss: 0.3984, LR: 0.000048
+Epoch 21, Batch 400/422, Loss: 0.2418, LR: 0.000048
+Epoch 21, Batch 410/422, Loss: 0.3442, LR: 0.000048
+Epoch 21, Batch 420/422, Loss: 0.3117, LR: 0.000048
+
+Train Loss: 0.2805
+Val Loss: 1.3547
+mAP@0.50=0.6014, mAP@0.50:0.95=0.3609, Precision=0.6488, Recall=0.7129, F1=0.6754
+
+==================================================
+Epoch 22/50
+==================================================
+Epoch 22, Batch 0/422, Loss: 0.3969, LR: 0.000048
+Epoch 22, Batch 10/422, Loss: 0.3795, LR: 0.000048
+Epoch 22, Batch 20/422, Loss: 0.3207, LR: 0.000048
+Epoch 22, Batch 30/422, Loss: 0.3, LR: 0.000048
+Epoch 22, Batch 40/422, Loss: 0.4147, LR: 0.000048
+Epoch 22, Batch 50/422, Loss: 0.3354, LR: 0.000048
+Epoch 22, Batch 60/422, Loss: 0.2577, LR: 0.000048
+Epoch 22, Batch 70/422, Loss: 0.2691, LR: 0.000048
+Epoch 22, Batch 80/422, Loss: 0.4068, LR: 0.000048
+Epoch 22, Batch 90/422, Loss: 0.4369, LR: 0.000048
+Epoch 22, Batch 100/422, Loss: 0.2264, LR: 0.000048
+Epoch 22, Batch 110/422, Loss: 0.2404, LR: 0.000048
+Epoch 22, Batch 120/422, Loss: 0.2999, LR: 0.000048
+Epoch 22, Batch 130/422, Loss: 0.3698, LR: 0.000048
+Epoch 22, Batch 140/422, Loss: 0.413, LR: 0.000048
+Epoch 22, Batch 150/422, Loss: 0.2231, LR: 0.000048
+Epoch 22, Batch 160/422, Loss: 0.4164, LR: 0.000048
+Epoch 22, Batch 170/422, Loss: 0.3397, LR: 0.000048
+Epoch 22, Batch 180/422, Loss: 0.247, LR: 0.000048
+Epoch 22, Batch 190/422, Loss: 0.3615, LR: 0.000048
+Epoch 22, Batch 200/422, Loss: 0.344, LR: 0.000048
+Epoch 22, Batch 210/422, Loss: 0.3647, LR: 0.000048
+Epoch 22, Batch 220/422, Loss: 0.2799, LR: 0.000048
+Epoch 22, Batch 230/422, Loss: 0.3791, LR: 0.000048
+Epoch 22, Batch 240/422, Loss: 0.2624, LR: 0.000048
+Epoch 22, Batch 250/422, Loss: 0.3057, LR: 0.000048
+Epoch 22, Batch 260/422, Loss: 0.2502, LR: 0.000048
+Epoch 22, Batch 270/422, Loss: 0.2931, LR: 0.000048
+Epoch 22, Batch 280/422, Loss: 0.3022, LR: 0.000048
+Epoch 22, Batch 290/422, Loss: 0.2323, LR: 0.000048
+Epoch 22, Batch 300/422, Loss: 0.2392, LR: 0.000048
+Epoch 22, Batch 310/422, Loss: 0.225, LR: 0.000048
+Epoch 22, Batch 320/422, Loss: 0.3459, LR: 0.000048
+Epoch 22, Batch 330/422, Loss: 0.2822, LR: 0.000048
+Epoch 22, Batch 340/422, Loss: 0.2793, LR: 0.000048
+Epoch 22, Batch 350/422, Loss: 0.2351, LR: 0.000048
+Epoch 22, Batch 360/422, Loss: 0.4294, LR: 0.000048
+Epoch 22, Batch 370/422, Loss: 0.3835, LR: 0.000048
+Epoch 22, Batch 380/422, Loss: 0.3174, LR: 0.000048
+Epoch 22, Batch 390/422, Loss: 0.3533, LR: 0.000048
+Epoch 22, Batch 400/422, Loss: 0.3278, LR: 0.000048
+Epoch 22, Batch 410/422, Loss: 0.3652, LR: 0.000048
+Epoch 22, Batch 420/422, Loss: 0.2965, LR: 0.000048
+
+Train Loss: 0.2978
+Val Loss: 1.3472
+mAP@0.50=0.611, mAP@0.50:0.95=0.3569, Precision=0.6309, Recall=0.7154, F1=0.6756
+
+==================================================
+Epoch 23/50
+==================================================
+Epoch 23, Batch 0/422, Loss: 0.4122, LR: 0.000048
+Epoch 23, Batch 10/422, Loss: 0.2537, LR: 0.000048
+Epoch 23, Batch 20/422, Loss: 0.4348, LR: 0.000048
+Epoch 23, Batch 30/422, Loss: 0.2967, LR: 0.000048
+Epoch 23, Batch 40/422, Loss: 0.4347, LR: 0.000048
+Epoch 23, Batch 50/422, Loss: 0.3695, LR: 0.000048
+Epoch 23, Batch 60/422, Loss: 0.3797, LR: 0.000048
+Epoch 23, Batch 70/422, Loss: 0.279, LR: 0.000048
+Epoch 23, Batch 80/422, Loss: 0.2496, LR: 0.000048
+Epoch 23, Batch 90/422, Loss: 0.3089, LR: 0.000048
+Epoch 23, Batch 100/422, Loss: 0.398, LR: 0.000048
+Epoch 23, Batch 110/422, Loss: 0.4358, LR: 0.000048
+Epoch 23, Batch 120/422, Loss: 0.408, LR: 0.000048
+Epoch 23, Batch 130/422, Loss: 0.4024, LR: 0.000048
+Epoch 23, Batch 140/422, Loss: 0.2773, LR: 0.000048
+Epoch 23, Batch 150/422, Loss: 0.3376, LR: 0.000048
+Epoch 23, Batch 160/422, Loss: 0.2729, LR: 0.000048
+Epoch 23, Batch 170/422, Loss: 0.2269, LR: 0.000048
+Epoch 23, Batch 180/422, Loss: 0.2658, LR: 0.000048
+Epoch 23, Batch 190/422, Loss: 0.3348, LR: 0.000048
+Epoch 23, Batch 200/422, Loss: 0.266, LR: 0.000048
+Epoch 23, Batch 210/422, Loss: 0.3218, LR: 0.000048
+Epoch 23, Batch 220/422, Loss: 0.2306, LR: 0.000048
+Epoch 23, Batch 230/422, Loss: 0.3596, LR: 0.000048
+Epoch 23, Batch 240/422, Loss: 0.4384, LR: 0.000048
+Epoch 23, Batch 250/422, Loss: 0.2371, LR: 0.000048
+Epoch 23, Batch 260/422, Loss: 0.369, LR: 0.000048
+Epoch 23, Batch 270/422, Loss: 0.3237, LR: 0.000048
+Epoch 23, Batch 280/422, Loss: 0.3728, LR: 0.000048
+Epoch 23, Batch 290/422, Loss: 0.3569, LR: 0.000048
+Epoch 23, Batch 300/422, Loss: 0.3178, LR: 0.000048
+Epoch 23, Batch 310/422, Loss: 0.3434, LR: 0.000048
+Epoch 23, Batch 320/422, Loss: 0.3555, LR: 0.000048
+Epoch 23, Batch 330/422, Loss: 0.3078, LR: 0.000048
+Epoch 23, Batch 340/422, Loss: 0.2564, LR: 0.000048
+Epoch 23, Batch 350/422, Loss: 0.381, LR: 0.000048
+Epoch 23, Batch 360/422, Loss: 0.224, LR: 0.000048
+Epoch 23, Batch 370/422, Loss: 0.2377, LR: 0.000048
+Epoch 23, Batch 380/422, Loss: 0.2285, LR: 0.000048
+Epoch 23, Batch 390/422, Loss: 0.3985, LR: 0.000048
+Epoch 23, Batch 400/422, Loss: 0.227, LR: 0.000048
+Epoch 23, Batch 410/422, Loss: 0.4139, LR: 0.000048
+Epoch 23, Batch 420/422, Loss: 0.2261, LR: 0.000048
+
+Train Loss: 0.3083
+Val Loss: 1.3882
+mAP@0.50=0.6195, mAP@0.50:0.95=0.3658, Precision=0.6358, Recall=0.7012, F1=0.6789
+
+==================================================
+Epoch 24/50
+==================================================
+Epoch 24, Batch 0/422, Loss: 0.2388, LR: 0.000048
+Epoch 24, Batch 10/422, Loss: 0.2804, LR: 0.000048
+Epoch 24, Batch 20/422, Loss: 0.4017, LR: 0.000048
+Epoch 24, Batch 30/422, Loss: 0.3112, LR: 0.000048
+Epoch 24, Batch 40/422, Loss: 0.3515, LR: 0.000048
+Epoch 24, Batch 50/422, Loss: 0.4153, LR: 0.000048
+Epoch 24, Batch 60/422, Loss: 0.2458, LR: 0.000048
+Epoch 24, Batch 70/422, Loss: 0.4144, LR: 0.000048
+Epoch 24, Batch 80/422, Loss: 0.3001, LR: 0.000048
+Epoch 24, Batch 90/422, Loss: 0.2534, LR: 0.000048
+Epoch 24, Batch 100/422, Loss: 0.4051, LR: 0.000048
+Epoch 24, Batch 110/422, Loss: 0.3407, LR: 0.000048
+Epoch 24, Batch 120/422, Loss: 0.3647, LR: 0.000048
+Epoch 24, Batch 130/422, Loss: 0.4349, LR: 0.000048
+Epoch 24, Batch 140/422, Loss: 0.2974, LR: 0.000048
+Epoch 24, Batch 150/422, Loss: 0.4108, LR: 0.000048
+Epoch 24, Batch 160/422, Loss: 0.2942, LR: 0.000048
+Epoch 24, Batch 170/422, Loss: 0.3759, LR: 0.000048
+Epoch 24, Batch 180/422, Loss: 0.3301, LR: 0.000048
+Epoch 24, Batch 190/422, Loss: 0.4335, LR: 0.000048
+Epoch 24, Batch 200/422, Loss: 0.2531, LR: 0.000048
+Epoch 24, Batch 210/422, Loss: 0.2737, LR: 0.000048
+Epoch 24, Batch 220/422, Loss: 0.4079, LR: 0.000048
+Epoch 24, Batch 230/422, Loss: 0.2319, LR: 0.000048
+Epoch 24, Batch 240/422, Loss: 0.3388, LR: 0.000048
+Epoch 24, Batch 250/422, Loss: 0.2739, LR: 0.000048
+Epoch 24, Batch 260/422, Loss: 0.2217, LR: 0.000048
+Epoch 24, Batch 270/422, Loss: 0.4323, LR: 0.000048
+Epoch 24, Batch 280/422, Loss: 0.2393, LR: 0.000048
+Epoch 24, Batch 290/422, Loss: 0.3633, LR: 0.000048
+Epoch 24, Batch 300/422, Loss: 0.4107, LR: 0.000048
+Epoch 24, Batch 310/422, Loss: 0.3142, LR: 0.000048
+Epoch 24, Batch 320/422, Loss: 0.2414, LR: 0.000048
+Epoch 24, Batch 330/422, Loss: 0.27, LR: 0.000048
+Epoch 24, Batch 340/422, Loss: 0.3788, LR: 0.000048
+Epoch 24, Batch 350/422, Loss: 0.2571, LR: 0.000048
+Epoch 24, Batch 360/422, Loss: 0.396, LR: 0.000048
+Epoch 24, Batch 370/422, Loss: 0.3339, LR: 0.000048
+Epoch 24, Batch 380/422, Loss: 0.4044, LR: 0.000048
+Epoch 24, Batch 390/422, Loss: 0.3349, LR: 0.000048
+Epoch 24, Batch 400/422, Loss: 0.4137, LR: 0.000048
+Epoch 24, Batch 410/422, Loss: 0.2361, LR: 0.000048
+Epoch 24, Batch 420/422, Loss: 0.4307, LR: 0.000048
+
+Train Loss: 0.2819
+Val Loss: 1.3445
+mAP@0.50=0.6067, mAP@0.50:0.95=0.3685, Precision=0.6597, Recall=0.7138, F1=0.6845
+
+==================================================
+Epoch 25/50
+==================================================
+Epoch 25, Batch 0/422, Loss: 0.2298, LR: 0.000048
+Epoch 25, Batch 10/422, Loss: 0.3076, LR: 0.000048
+Epoch 25, Batch 20/422, Loss: 0.4066, LR: 0.000048
+Epoch 25, Batch 30/422, Loss: 0.4051, LR: 0.000048
+Epoch 25, Batch 40/422, Loss: 0.2767, LR: 0.000048
+Epoch 25, Batch 50/422, Loss: 0.252, LR: 0.000048
+Epoch 25, Batch 60/422, Loss: 0.3296, LR: 0.000048
+Epoch 25, Batch 70/422, Loss: 0.413, LR: 0.000048
+Epoch 25, Batch 80/422, Loss: 0.2239, LR: 0.000048
+Epoch 25, Batch 90/422, Loss: 0.3279, LR: 0.000048
+Epoch 25, Batch 100/422, Loss: 0.3645, LR: 0.000048
+Epoch 25, Batch 110/422, Loss: 0.3472, LR: 0.000048
+Epoch 25, Batch 120/422, Loss: 0.2423, LR: 0.000048
+Epoch 25, Batch 130/422, Loss: 0.3751, LR: 0.000048
+Epoch 25, Batch 140/422, Loss: 0.2646, LR: 0.000048
+Epoch 25, Batch 150/422, Loss: 0.3744, LR: 0.000048
+Epoch 25, Batch 160/422, Loss: 0.226, LR: 0.000048
+Epoch 25, Batch 170/422, Loss: 0.4345, LR: 0.000048
+Epoch 25, Batch 180/422, Loss: 0.3387, LR: 0.000048
+Epoch 25, Batch 190/422, Loss: 0.4336, LR: 0.000048
+Epoch 25, Batch 200/422, Loss: 0.2452, LR: 0.000048
+Epoch 25, Batch 210/422, Loss: 0.2297, LR: 0.000048
+Epoch 25, Batch 220/422, Loss: 0.2372, LR: 0.000048
+Epoch 25, Batch 230/422, Loss: 0.2833, LR: 0.000048
+Epoch 25, Batch 240/422, Loss: 0.2776, LR: 0.000048
+Epoch 25, Batch 250/422, Loss: 0.3604, LR: 0.000048
+Epoch 25, Batch 260/422, Loss: 0.3306, LR: 0.000048
+Epoch 25, Batch 270/422, Loss: 0.231, LR: 0.000048
+Epoch 25, Batch 280/422, Loss: 0.2877, LR: 0.000048
+Epoch 25, Batch 290/422, Loss: 0.3293, LR: 0.000048
+Epoch 25, Batch 300/422, Loss: 0.26, LR: 0.000048
+Epoch 25, Batch 310/422, Loss: 0.4318, LR: 0.000048
+Epoch 25, Batch 320/422, Loss: 0.2451, LR: 0.000048
+Epoch 25, Batch 330/422, Loss: 0.4242, LR: 0.000048
+Epoch 25, Batch 340/422, Loss: 0.3816, LR: 0.000048
+Epoch 25, Batch 350/422, Loss: 0.2498, LR: 0.000048
+Epoch 25, Batch 360/422, Loss: 0.3565, LR: 0.000048
+Epoch 25, Batch 370/422, Loss: 0.2425, LR: 0.000048
+Epoch 25, Batch 380/422, Loss: 0.4296, LR: 0.000048
+Epoch 25, Batch 390/422, Loss: 0.3678, LR: 0.000048
+Epoch 25, Batch 400/422, Loss: 0.3027, LR: 0.000048
+Epoch 25, Batch 410/422, Loss: 0.3458, LR: 0.000048
+Epoch 25, Batch 420/422, Loss: 0.3044, LR: 0.000048
+
+Train Loss: 0.2891
+Val Loss: 1.3524
+mAP@0.50=0.6039, mAP@0.50:0.95=0.365, Precision=0.6555, Recall=0.7175, F1=0.6722
+
+==================================================
+Epoch 26/50
+==================================================
+Epoch 26, Batch 0/422, Loss: 0.2948, LR: 0.000048
+Epoch 26, Batch 10/422, Loss: 0.2596, LR: 0.000048
+Epoch 26, Batch 20/422, Loss: 0.4104, LR: 0.000048
+Epoch 26, Batch 30/422, Loss: 0.2209, LR: 0.000048
+Epoch 26, Batch 40/422, Loss: 0.2521, LR: 0.000048
+Epoch 26, Batch 50/422, Loss: 0.2619, LR: 0.000048
+Epoch 26, Batch 60/422, Loss: 0.2594, LR: 0.000048
+Epoch 26, Batch 70/422, Loss: 0.3496, LR: 0.000048
+Epoch 26, Batch 80/422, Loss: 0.2755, LR: 0.000048
+Epoch 26, Batch 90/422, Loss: 0.3085, LR: 0.000048
+Epoch 26, Batch 100/422, Loss: 0.2584, LR: 0.000048
+Epoch 26, Batch 110/422, Loss: 0.4325, LR: 0.000048
+Epoch 26, Batch 120/422, Loss: 0.2425, LR: 0.000048
+Epoch 26, Batch 130/422, Loss: 0.3302, LR: 0.000048
+Epoch 26, Batch 140/422, Loss: 0.3773, LR: 0.000048
+Epoch 26, Batch 150/422, Loss: 0.3209, LR: 0.000048
+Epoch 26, Batch 160/422, Loss: 0.2878, LR: 0.000048
+Epoch 26, Batch 170/422, Loss: 0.3947, LR: 0.000048
+Epoch 26, Batch 180/422, Loss: 0.3062, LR: 0.000048
+Epoch 26, Batch 190/422, Loss: 0.2952, LR: 0.000048
+Epoch 26, Batch 200/422, Loss: 0.2688, LR: 0.000048
+Epoch 26, Batch 210/422, Loss: 0.4015, LR: 0.000048
+Epoch 26, Batch 220/422, Loss: 0.2343, LR: 0.000048
+Epoch 26, Batch 230/422, Loss: 0.3747, LR: 0.000048
+Epoch 26, Batch 240/422, Loss: 0.3554, LR: 0.000048
+Epoch 26, Batch 250/422, Loss: 0.2392, LR: 0.000048
+Epoch 26, Batch 260/422, Loss: 0.2606, LR: 0.000048
+Epoch 26, Batch 270/422, Loss: 0.397, LR: 0.000048
+Epoch 26, Batch 280/422, Loss: 0.3898, LR: 0.000048
+Epoch 26, Batch 290/422, Loss: 0.2244, LR: 0.000048
+Epoch 26, Batch 300/422, Loss: 0.3898, LR: 0.000048
+Epoch 26, Batch 310/422, Loss: 0.2367, LR: 0.000048
+Epoch 26, Batch 320/422, Loss: 0.3794, LR: 0.000048
+Epoch 26, Batch 330/422, Loss: 0.3168, LR: 0.000048
+Epoch 26, Batch 340/422, Loss: 0.4157, LR: 0.000048
+Epoch 26, Batch 350/422, Loss: 0.2427, LR: 0.000048
+Epoch 26, Batch 360/422, Loss: 0.4068, LR: 0.000048
+Epoch 26, Batch 370/422, Loss: 0.2839, LR: 0.000048
+Epoch 26, Batch 380/422, Loss: 0.3742, LR: 0.000048
+Epoch 26, Batch 390/422, Loss: 0.3586, LR: 0.000048
+Epoch 26, Batch 400/422, Loss: 0.323, LR: 0.000048
+Epoch 26, Batch 410/422, Loss: 0.2996, LR: 0.000048
+Epoch 26, Batch 420/422, Loss: 0.3868, LR: 0.000048
+
+Train Loss: 0.3057
+Val Loss: 1.3976
+mAP@0.50=0.6166, mAP@0.50:0.95=0.3623, Precision=0.648, Recall=0.727, F1=0.6732
+
+==================================================
+Epoch 27/50
+==================================================
+Epoch 27, Batch 0/422, Loss: 0.2886, LR: 0.000048
+Epoch 27, Batch 10/422, Loss: 0.3913, LR: 0.000048
+Epoch 27, Batch 20/422, Loss: 0.4352, LR: 0.000048
+Epoch 27, Batch 30/422, Loss: 0.3989, LR: 0.000048
+Epoch 27, Batch 40/422, Loss: 0.2439, LR: 0.000048
+Epoch 27, Batch 50/422, Loss: 0.3449, LR: 0.000048
+Epoch 27, Batch 60/422, Loss: 0.2594, LR: 0.000048
+Epoch 27, Batch 70/422, Loss: 0.2967, LR: 0.000048
+Epoch 27, Batch 80/422, Loss: 0.2507, LR: 0.000048
+Epoch 27, Batch 90/422, Loss: 0.2203, LR: 0.000048
+Epoch 27, Batch 100/422, Loss: 0.2442, LR: 0.000048
+Epoch 27, Batch 110/422, Loss: 0.3024, LR: 0.000048
+Epoch 27, Batch 120/422, Loss: 0.3043, LR: 0.000048
+Epoch 27, Batch 130/422, Loss: 0.4089, LR: 0.000048
+Epoch 27, Batch 140/422, Loss: 0.305, LR: 0.000048
+Epoch 27, Batch 150/422, Loss: 0.3573, LR: 0.000048
+Epoch 27, Batch 160/422, Loss: 0.3134, LR: 0.000048
+Epoch 27, Batch 170/422, Loss: 0.3336, LR: 0.000048
+Epoch 27, Batch 180/422, Loss: 0.4342, LR: 0.000048
+Epoch 27, Batch 190/422, Loss: 0.4145, LR: 0.000048
+Epoch 27, Batch 200/422, Loss: 0.4121, LR: 0.000048
+Epoch 27, Batch 210/422, Loss: 0.4171, LR: 0.000048
+Epoch 27, Batch 220/422, Loss: 0.325, LR: 0.000048
+Epoch 27, Batch 230/422, Loss: 0.286, LR: 0.000048
+Epoch 27, Batch 240/422, Loss: 0.3032, LR: 0.000048
+Epoch 27, Batch 250/422, Loss: 0.4292, LR: 0.000048
+Epoch 27, Batch 260/422, Loss: 0.3673, LR: 0.000048
+Epoch 27, Batch 270/422, Loss: 0.2806, LR: 0.000048
+Epoch 27, Batch 280/422, Loss: 0.3107, LR: 0.000048
+Epoch 27, Batch 290/422, Loss: 0.344, LR: 0.000048
+Epoch 27, Batch 300/422, Loss: 0.3648, LR: 0.000048
+Epoch 27, Batch 310/422, Loss: 0.4233, LR: 0.000048
+Epoch 27, Batch 320/422, Loss: 0.2964, LR: 0.000048
+Epoch 27, Batch 330/422, Loss: 0.2769, LR: 0.000048
+Epoch 27, Batch 340/422, Loss: 0.3433, LR: 0.000048
+Epoch 27, Batch 350/422, Loss: 0.2464, LR: 0.000048
+Epoch 27, Batch 360/422, Loss: 0.3144, LR: 0.000048
+Epoch 27, Batch 370/422, Loss: 0.2867, LR: 0.000048
+Epoch 27, Batch 380/422, Loss: 0.3744, LR: 0.000048
+Epoch 27, Batch 390/422, Loss: 0.2856, LR: 0.000048
+Epoch 27, Batch 400/422, Loss: 0.38, LR: 0.000048
+Epoch 27, Batch 410/422, Loss: 0.3221, LR: 0.000048
+Epoch 27, Batch 420/422, Loss: 0.293, LR: 0.000048
+
+Train Loss: 0.3097
+Val Loss: 1.3998
+mAP@0.50=0.5995, mAP@0.50:0.95=0.3574, Precision=0.6392, Recall=0.7094, F1=0.6802
+
+==================================================
+Epoch 28/50
+==================================================
+Epoch 28, Batch 0/422, Loss: 0.3138, LR: 0.000048
+Epoch 28, Batch 10/422, Loss: 0.4215, LR: 0.000048
+Epoch 28, Batch 20/422, Loss: 0.3298, LR: 0.000048
+Epoch 28, Batch 30/422, Loss: 0.3483, LR: 0.000048
+Epoch 28, Batch 40/422, Loss: 0.3331, LR: 0.000048
+Epoch 28, Batch 50/422, Loss: 0.4016, LR: 0.000048
+Epoch 28, Batch 60/422, Loss: 0.3228, LR: 0.000048
+Epoch 28, Batch 70/422, Loss: 0.4362, LR: 0.000048
+Epoch 28, Batch 80/422, Loss: 0.4109, LR: 0.000048
+Epoch 28, Batch 90/422, Loss: 0.231, LR: 0.000048
+Epoch 28, Batch 100/422, Loss: 0.4007, LR: 0.000048
+Epoch 28, Batch 110/422, Loss: 0.2669, LR: 0.000048
+Epoch 28, Batch 120/422, Loss: 0.3233, LR: 0.000048
+Epoch 28, Batch 130/422, Loss: 0.398, LR: 0.000048
+Epoch 28, Batch 140/422, Loss: 0.2635, LR: 0.000048
+Epoch 28, Batch 150/422, Loss: 0.3271, LR: 0.000048
+Epoch 28, Batch 160/422, Loss: 0.3734, LR: 0.000048
+Epoch 28, Batch 170/422, Loss: 0.3912, LR: 0.000048
+Epoch 28, Batch 180/422, Loss: 0.4377, LR: 0.000048
+Epoch 28, Batch 190/422, Loss: 0.4066, LR: 0.000048
+Epoch 28, Batch 200/422, Loss: 0.4307, LR: 0.000048
+Epoch 28, Batch 210/422, Loss: 0.2818, LR: 0.000048
+Epoch 28, Batch 220/422, Loss: 0.3238, LR: 0.000048
+Epoch 28, Batch 230/422, Loss: 0.3364, LR: 0.000048
+Epoch 28, Batch 240/422, Loss: 0.3021, LR: 0.000048
+Epoch 28, Batch 250/422, Loss: 0.2904, LR: 0.000048
+Epoch 28, Batch 260/422, Loss: 0.2265, LR: 0.000048
+Epoch 28, Batch 270/422, Loss: 0.2613, LR: 0.000048
+Epoch 28, Batch 280/422, Loss: 0.2917, LR: 0.000048
+Epoch 28, Batch 290/422, Loss: 0.2216, LR: 0.000048
+Epoch 28, Batch 300/422, Loss: 0.4245, LR: 0.000048
+Epoch 28, Batch 310/422, Loss: 0.4042, LR: 0.000048
+Epoch 28, Batch 320/422, Loss: 0.3328, LR: 0.000048
+Epoch 28, Batch 330/422, Loss: 0.34, LR: 0.000048
+Epoch 28, Batch 340/422, Loss: 0.4172, LR: 0.000048
+Epoch 28, Batch 350/422, Loss: 0.2779, LR: 0.000048
+Epoch 28, Batch 360/422, Loss: 0.3987, LR: 0.000048
+Epoch 28, Batch 370/422, Loss: 0.2333, LR: 0.000048
+Epoch 28, Batch 380/422, Loss: 0.3344, LR: 0.000048
+Epoch 28, Batch 390/422, Loss: 0.3293, LR: 0.000048
+Epoch 28, Batch 400/422, Loss: 0.4173, LR: 0.000048
+Epoch 28, Batch 410/422, Loss: 0.3744, LR: 0.000048
+Epoch 28, Batch 420/422, Loss: 0.4382, LR: 0.000048
+
+Train Loss: 0.2781
+Val Loss: 1.3426
+mAP@0.50=0.6047, mAP@0.50:0.95=0.352, Precision=0.654, Recall=0.7254, F1=0.6715
+
+==================================================
+Epoch 29/50
+==================================================
+Epoch 29, Batch 0/422, Loss: 0.279, LR: 0.000048
+Epoch 29, Batch 10/422, Loss: 0.2349, LR: 0.000048
+Epoch 29, Batch 20/422, Loss: 0.3382, LR: 0.000048
+Epoch 29, Batch 30/422, Loss: 0.4207, LR: 0.000048
+Epoch 29, Batch 40/422, Loss: 0.3001, LR: 0.000048
+Epoch 29, Batch 50/422, Loss: 0.3977, LR: 0.000048
+Epoch 29, Batch 60/422, Loss: 0.2981, LR: 0.000048
+Epoch 29, Batch 70/422, Loss: 0.4307, LR: 0.000048
+Epoch 29, Batch 80/422, Loss: 0.3332, LR: 0.000048
+Epoch 29, Batch 90/422, Loss: 0.3263, LR: 0.000048
+Epoch 29, Batch 100/422, Loss: 0.3056, LR: 0.000048
+Epoch 29, Batch 110/422, Loss: 0.3513, LR: 0.000048
+Epoch 29, Batch 120/422, Loss: 0.3619, LR: 0.000048
+Epoch 29, Batch 130/422, Loss: 0.3656, LR: 0.000048
+Epoch 29, Batch 140/422, Loss: 0.4169, LR: 0.000048
+Epoch 29, Batch 150/422, Loss: 0.2514, LR: 0.000048
+Epoch 29, Batch 160/422, Loss: 0.4125, LR: 0.000048
+Epoch 29, Batch 170/422, Loss: 0.3675, LR: 0.000048
+Epoch 29, Batch 180/422, Loss: 0.3507, LR: 0.000048
+Epoch 29, Batch 190/422, Loss: 0.4178, LR: 0.000048
+Epoch 29, Batch 200/422, Loss: 0.247, LR: 0.000048
+Epoch 29, Batch 210/422, Loss: 0.4219, LR: 0.000048
+Epoch 29, Batch 220/422, Loss: 0.4223, LR: 0.000048
+Epoch 29, Batch 230/422, Loss: 0.3133, LR: 0.000048
+Epoch 29, Batch 240/422, Loss: 0.3662, LR: 0.000048
+Epoch 29, Batch 250/422, Loss: 0.2228, LR: 0.000048
+Epoch 29, Batch 260/422, Loss: 0.2464, LR: 0.000048
+Epoch 29, Batch 270/422, Loss: 0.3707, LR: 0.000048
+Epoch 29, Batch 280/422, Loss: 0.2579, LR: 0.000048
+Epoch 29, Batch 290/422, Loss: 0.2423, LR: 0.000048
+Epoch 29, Batch 300/422, Loss: 0.4325, LR: 0.000048
+Epoch 29, Batch 310/422, Loss: 0.3828, LR: 0.000048
+Epoch 29, Batch 320/422, Loss: 0.3609, LR: 0.000048
+Epoch 29, Batch 330/422, Loss: 0.2569, LR: 0.000048
+Epoch 29, Batch 340/422, Loss: 0.426, LR: 0.000048
+Epoch 29, Batch 350/422, Loss: 0.3804, LR: 0.000048
+Epoch 29, Batch 360/422, Loss: 0.3872, LR: 0.000048
+Epoch 29, Batch 370/422, Loss: 0.3431, LR: 0.000048
+Epoch 29, Batch 380/422, Loss: 0.3913, LR: 0.000048
+Epoch 29, Batch 390/422, Loss: 0.3955, LR: 0.000048
+Epoch 29, Batch 400/422, Loss: 0.3822, LR: 0.000048
+Epoch 29, Batch 410/422, Loss: 0.2599, LR: 0.000048
+Epoch 29, Batch 420/422, Loss: 0.2946, LR: 0.000048
+
+Train Loss: 0.3042
+Val Loss: 1.3821
+mAP@0.50=0.6127, mAP@0.50:0.95=0.3647, Precision=0.6402, Recall=0.7198, F1=0.6833
+
+==================================================
+Epoch 30/50
+==================================================
+Epoch 30, Batch 0/422, Loss: 0.3326, LR: 0.000048
+Epoch 30, Batch 10/422, Loss: 0.2987, LR: 0.000048
+Epoch 30, Batch 20/422, Loss: 0.277, LR: 0.000048
+Epoch 30, Batch 30/422, Loss: 0.3712, LR: 0.000048
+Epoch 30, Batch 40/422, Loss: 0.2764, LR: 0.000048
+Epoch 30, Batch 50/422, Loss: 0.3099, LR: 0.000048
+Epoch 30, Batch 60/422, Loss: 0.4284, LR: 0.000048
+Epoch 30, Batch 70/422, Loss: 0.3728, LR: 0.000048
+Epoch 30, Batch 80/422, Loss: 0.3195, LR: 0.000048
+Epoch 30, Batch 90/422, Loss: 0.3292, LR: 0.000048
+Epoch 30, Batch 100/422, Loss: 0.35, LR: 0.000048
+Epoch 30, Batch 110/422, Loss: 0.4283, LR: 0.000048
+Epoch 30, Batch 120/422, Loss: 0.2699, LR: 0.000048
+Epoch 30, Batch 130/422, Loss: 0.275, LR: 0.000048
+Epoch 30, Batch 140/422, Loss: 0.395, LR: 0.000048
+Epoch 30, Batch 150/422, Loss: 0.3193, LR: 0.000048
+Epoch 30, Batch 160/422, Loss: 0.3731, LR: 0.000048
+Epoch 30, Batch 170/422, Loss: 0.3178, LR: 0.000048
+Epoch 30, Batch 180/422, Loss: 0.3897, LR: 0.000048
+Epoch 30, Batch 190/422, Loss: 0.241, LR: 0.000048
+Epoch 30, Batch 200/422, Loss: 0.2795, LR: 0.000048
+Epoch 30, Batch 210/422, Loss: 0.2361, LR: 0.000048
+Epoch 30, Batch 220/422, Loss: 0.3198, LR: 0.000048
+Epoch 30, Batch 230/422, Loss: 0.3672, LR: 0.000048
+Epoch 30, Batch 240/422, Loss: 0.2411, LR: 0.000048
+Epoch 30, Batch 250/422, Loss: 0.4007, LR: 0.000048
+Epoch 30, Batch 260/422, Loss: 0.3951, LR: 0.000048
+Epoch 30, Batch 270/422, Loss: 0.3359, LR: 0.000048
+Epoch 30, Batch 280/422, Loss: 0.2898, LR: 0.000048
+Epoch 30, Batch 290/422, Loss: 0.3728, LR: 0.000048
+Epoch 30, Batch 300/422, Loss: 0.2649, LR: 0.000048
+Epoch 30, Batch 310/422, Loss: 0.3248, LR: 0.000048
+Epoch 30, Batch 320/422, Loss: 0.379, LR: 0.000048
+Epoch 30, Batch 330/422, Loss: 0.2411, LR: 0.000048
+Epoch 30, Batch 340/422, Loss: 0.2467, LR: 0.000048
+Epoch 30, Batch 350/422, Loss: 0.3178, LR: 0.000048
+Epoch 30, Batch 360/422, Loss: 0.2969, LR: 0.000048
+Epoch 30, Batch 370/422, Loss: 0.306, LR: 0.000048
+Epoch 30, Batch 380/422, Loss: 0.4263, LR: 0.000048
+Epoch 30, Batch 390/422, Loss: 0.4378, LR: 0.000048
+Epoch 30, Batch 400/422, Loss: 0.2225, LR: 0.000048
+Epoch 30, Batch 410/422, Loss: 0.414, LR: 0.000048
+Epoch 30, Batch 420/422, Loss: 0.3797, LR: 0.000048
+
+Train Loss: 0.2867
+Val Loss: 1.3412
+mAP@0.50=0.6092, mAP@0.50:0.95=0.3561, Precision=0.6376, Recall=0.7044, F1=0.6713
+
+==================================================
+Epoch 31/50
+==================================================
+Epoch 31, Batch 0/422, Loss: 0.2353, LR: 0.000048
+Epoch 31, Batch 10/422, Loss: 0.2645, LR: 0.000048
+Epoch 31, Batch 20/422, Loss: 0.3727, LR: 0.000048
+Epoch 31, Batch 30/422, Loss: 0.221, LR: 0.000048
+Epoch 31, Batch 40/422, Loss: 0.3175, LR: 0.000048
+Epoch 31, Batch 50/422, Loss: 0.3567, LR: 0.000048
+Epoch 31, Batch 60/422, Loss: 0.4307, LR: 0.000048
+Epoch 31, Batch 70/422, Loss: 0.3271, LR: 0.000048
+Epoch 31, Batch 80/422, Loss: 0.4168, LR: 0.000048
+Epoch 31, Batch 90/422, Loss: 0.2798, LR: 0.000048
+Epoch 31, Batch 100/422, Loss: 0.3051, LR: 0.000048
+Epoch 31, Batch 110/422, Loss: 0.3624, LR: 0.000048
+Epoch 31, Batch 120/422, Loss: 0.371, LR: 0.000048
+Epoch 31, Batch 130/422, Loss: 0.4185, LR: 0.000048
+Epoch 31, Batch 140/422, Loss: 0.3493, LR: 0.000048
+Epoch 31, Batch 150/422, Loss: 0.2897, LR: 0.000048
+Epoch 31, Batch 160/422, Loss: 0.2929, LR: 0.000048
+Epoch 31, Batch 170/422, Loss: 0.4133, LR: 0.000048
+Epoch 31, Batch 180/422, Loss: 0.309, LR: 0.000048
+Epoch 31, Batch 190/422, Loss: 0.2628, LR: 0.000048
+Epoch 31, Batch 200/422, Loss: 0.3128, LR: 0.000048
+Epoch 31, Batch 210/422, Loss: 0.2802, LR: 0.000048
+Epoch 31, Batch 220/422, Loss: 0.4238, LR: 0.000048
+Epoch 31, Batch 230/422, Loss: 0.3328, LR: 0.000048
+Epoch 31, Batch 240/422, Loss: 0.3249, LR: 0.000048
+Epoch 31, Batch 250/422, Loss: 0.321, LR: 0.000048
+Epoch 31, Batch 260/422, Loss: 0.2731, LR: 0.000048
+Epoch 31, Batch 270/422, Loss: 0.2838, LR: 0.000048
+Epoch 31, Batch 280/422, Loss: 0.2391, LR: 0.000048
+Epoch 31, Batch 290/422, Loss: 0.3797, LR: 0.000048
+Epoch 31, Batch 300/422, Loss: 0.3279, LR: 0.000048
+Epoch 31, Batch 310/422, Loss: 0.2248, LR: 0.000048
+Epoch 31, Batch 320/422, Loss: 0.4128, LR: 0.000048
+Epoch 31, Batch 330/422, Loss: 0.425, LR: 0.000048
+Epoch 31, Batch 340/422, Loss: 0.3557, LR: 0.000048
+Epoch 31, Batch 350/422, Loss: 0.3134, LR: 0.000048
+Epoch 31, Batch 360/422, Loss: 0.3597, LR: 0.000048
+Epoch 31, Batch 370/422, Loss: 0.4161, LR: 0.000048
+Epoch 31, Batch 380/422, Loss: 0.3327, LR: 0.000048
+Epoch 31, Batch 390/422, Loss: 0.2756, LR: 0.000048
+Epoch 31, Batch 400/422, Loss: 0.3049, LR: 0.000048
+Epoch 31, Batch 410/422, Loss: 0.265, LR: 0.000048
+Epoch 31, Batch 420/422, Loss: 0.3021, LR: 0.000048
+
+Train Loss: 0.3064
+Val Loss: 1.3932
+mAP@0.50=0.6014, mAP@0.50:0.95=0.362, Precision=0.6354, Recall=0.7043, F1=0.6898
+
+==================================================
+Epoch 32/50
+==================================================
+Epoch 32, Batch 0/422, Loss: 0.3684, LR: 0.000048
+Epoch 32, Batch 10/422, Loss: 0.3879, LR: 0.000048
+Epoch 32, Batch 20/422, Loss: 0.3423, LR: 0.000048
+Epoch 32, Batch 30/422, Loss: 0.2625, LR: 0.000048
+Epoch 32, Batch 40/422, Loss: 0.3185, LR: 0.000048
+Epoch 32, Batch 50/422, Loss: 0.2306, LR: 0.000048
+Epoch 32, Batch 60/422, Loss: 0.3865, LR: 0.000048
+Epoch 32, Batch 70/422, Loss: 0.3392, LR: 0.000048
+Epoch 32, Batch 80/422, Loss: 0.3075, LR: 0.000048
+Epoch 32, Batch 90/422, Loss: 0.3333, LR: 0.000048
+Epoch 32, Batch 100/422, Loss: 0.2799, LR: 0.000048
+Epoch 32, Batch 110/422, Loss: 0.3313, LR: 0.000048
+Epoch 32, Batch 120/422, Loss: 0.3243, LR: 0.000048
+Epoch 32, Batch 130/422, Loss: 0.4333, LR: 0.000048
+Epoch 32, Batch 140/422, Loss: 0.3946, LR: 0.000048
+Epoch 32, Batch 150/422, Loss: 0.4148, LR: 0.000048
+Epoch 32, Batch 160/422, Loss: 0.2472, LR: 0.000048
+Epoch 32, Batch 170/422, Loss: 0.3979, LR: 0.000048
+Epoch 32, Batch 180/422, Loss: 0.2497, LR: 0.000048
+Epoch 32, Batch 190/422, Loss: 0.3247, LR: 0.000048
+Epoch 32, Batch 200/422, Loss: 0.2843, LR: 0.000048
+Epoch 32, Batch 210/422, Loss: 0.4014, LR: 0.000048
+Epoch 32, Batch 220/422, Loss: 0.2923, LR: 0.000048
+Epoch 32, Batch 230/422, Loss: 0.2405, LR: 0.000048
+Epoch 32, Batch 240/422, Loss: 0.2292, LR: 0.000048
+Epoch 32, Batch 250/422, Loss: 0.3316, LR: 0.000048
+Epoch 32, Batch 260/422, Loss: 0.2913, LR: 0.000048
+Epoch 32, Batch 270/422, Loss: 0.4166, LR: 0.000048
+Epoch 32, Batch 280/422, Loss: 0.3043, LR: 0.000048
+Epoch 32, Batch 290/422, Loss: 0.3982, LR: 0.000048
+Epoch 32, Batch 300/422, Loss: 0.2529, LR: 0.000048
+Epoch 32, Batch 310/422, Loss: 0.3125, LR: 0.000048
+Epoch 32, Batch 320/422, Loss: 0.4372, LR: 0.000048
+Epoch 32, Batch 330/422, Loss: 0.3472, LR: 0.000048
+Epoch 32, Batch 340/422, Loss: 0.3718, LR: 0.000048
+Epoch 32, Batch 350/422, Loss: 0.2249, LR: 0.000048
+Epoch 32, Batch 360/422, Loss: 0.2664, LR: 0.000048
+Epoch 32, Batch 370/422, Loss: 0.3138, LR: 0.000048
+Epoch 32, Batch 380/422, Loss: 0.3056, LR: 0.000048
+Epoch 32, Batch 390/422, Loss: 0.386, LR: 0.000048
+Epoch 32, Batch 400/422, Loss: 0.2858, LR: 0.000048
+Epoch 32, Batch 410/422, Loss: 0.3036, LR: 0.000048
+Epoch 32, Batch 420/422, Loss: 0.3722, LR: 0.000048
+
+Train Loss: 0.2836
+Val Loss: 1.3416
+mAP@0.50=0.6015, mAP@0.50:0.95=0.3698, Precision=0.6473, Recall=0.7053, F1=0.6743
+
+==================================================
+Epoch 33/50
+==================================================
+Epoch 33, Batch 0/422, Loss: 0.3011, LR: 0.000048
+Epoch 33, Batch 10/422, Loss: 0.2603, LR: 0.000048
+Epoch 33, Batch 20/422, Loss: 0.3062, LR: 0.000048
+Epoch 33, Batch 30/422, Loss: 0.3566, LR: 0.000048
+Epoch 33, Batch 40/422, Loss: 0.3251, LR: 0.000048
+Epoch 33, Batch 50/422, Loss: 0.2497, LR: 0.000048
+Epoch 33, Batch 60/422, Loss: 0.2847, LR: 0.000048
+Epoch 33, Batch 70/422, Loss: 0.4232, LR: 0.000048
+Epoch 33, Batch 80/422, Loss: 0.4362, LR: 0.000048
+Epoch 33, Batch 90/422, Loss: 0.3062, LR: 0.000048
+Epoch 33, Batch 100/422, Loss: 0.221, LR: 0.000048
+Epoch 33, Batch 110/422, Loss: 0.3898, LR: 0.000048
+Epoch 33, Batch 120/422, Loss: 0.2799, LR: 0.000048
+Epoch 33, Batch 130/422, Loss: 0.3822, LR: 0.000048
+Epoch 33, Batch 140/422, Loss: 0.3614, LR: 0.000048
+Epoch 33, Batch 150/422, Loss: 0.3764, LR: 0.000048
+Epoch 33, Batch 160/422, Loss: 0.3969, LR: 0.000048
+Epoch 33, Batch 170/422, Loss: 0.351, LR: 0.000048
+Epoch 33, Batch 180/422, Loss: 0.2767, LR: 0.000048
+Epoch 33, Batch 190/422, Loss: 0.3852, LR: 0.000048
+Epoch 33, Batch 200/422, Loss: 0.4353, LR: 0.000048
+Epoch 33, Batch 210/422, Loss: 0.4075, LR: 0.000048
+Epoch 33, Batch 220/422, Loss: 0.3746, LR: 0.000048
+Epoch 33, Batch 230/422, Loss: 0.281, LR: 0.000048
+Epoch 33, Batch 240/422, Loss: 0.4112, LR: 0.000048
+Epoch 33, Batch 250/422, Loss: 0.2499, LR: 0.000048
+Epoch 33, Batch 260/422, Loss: 0.3667, LR: 0.000048
+Epoch 33, Batch 270/422, Loss: 0.3649, LR: 0.000048
+Epoch 33, Batch 280/422, Loss: 0.3369, LR: 0.000048
+Epoch 33, Batch 290/422, Loss: 0.419, LR: 0.000048
+Epoch 33, Batch 300/422, Loss: 0.2694, LR: 0.000048
+Epoch 33, Batch 310/422, Loss: 0.3125, LR: 0.000048
+Epoch 33, Batch 320/422, Loss: 0.3224, LR: 0.000048
+Epoch 33, Batch 330/422, Loss: 0.3798, LR: 0.000048
+Epoch 33, Batch 340/422, Loss: 0.3478, LR: 0.000048
+Epoch 33, Batch 350/422, Loss: 0.334, LR: 0.000048
+Epoch 33, Batch 360/422, Loss: 0.3843, LR: 0.000048
+Epoch 33, Batch 370/422, Loss: 0.2534, LR: 0.000048
+Epoch 33, Batch 380/422, Loss: 0.4291, LR: 0.000048
+Epoch 33, Batch 390/422, Loss: 0.4373, LR: 0.000048
+Epoch 33, Batch 400/422, Loss: 0.3792, LR: 0.000048
+Epoch 33, Batch 410/422, Loss: 0.2501, LR: 0.000048
+Epoch 33, Batch 420/422, Loss: 0.3602, LR: 0.000048
+
+Train Loss: 0.2815
+Val Loss: 1.3674
+mAP@0.50=0.6191, mAP@0.50:0.95=0.3583, Precision=0.6359, Recall=0.7114, F1=0.6711
+
+==================================================
+Epoch 34/50
+==================================================
+Epoch 34, Batch 0/422, Loss: 0.331, LR: 0.000048
+Epoch 34, Batch 10/422, Loss: 0.2848, LR: 0.000048
+Epoch 34, Batch 20/422, Loss: 0.2233, LR: 0.000048
+Epoch 34, Batch 30/422, Loss: 0.3449, LR: 0.000048
+Epoch 34, Batch 40/422, Loss: 0.4063, LR: 0.000048
+Epoch 34, Batch 50/422, Loss: 0.4139, LR: 0.000048
+Epoch 34, Batch 60/422, Loss: 0.2381, LR: 0.000048
+Epoch 34, Batch 70/422, Loss: 0.3287, LR: 0.000048
+Epoch 34, Batch 80/422, Loss: 0.2822, LR: 0.000048
+Epoch 34, Batch 90/422, Loss: 0.3578, LR: 0.000048
+Epoch 34, Batch 100/422, Loss: 0.3149, LR: 0.000048
+Epoch 34, Batch 110/422, Loss: 0.3524, LR: 0.000048
+Epoch 34, Batch 120/422, Loss: 0.2912, LR: 0.000048
+Epoch 34, Batch 130/422, Loss: 0.3037, LR: 0.000048
+Epoch 34, Batch 140/422, Loss: 0.4224, LR: 0.000048
+Epoch 34, Batch 150/422, Loss: 0.3988, LR: 0.000048
+Epoch 34, Batch 160/422, Loss: 0.2771, LR: 0.000048
+Epoch 34, Batch 170/422, Loss: 0.2304, LR: 0.000048
+Epoch 34, Batch 180/422, Loss: 0.4058, LR: 0.000048
+Epoch 34, Batch 190/422, Loss: 0.4086, LR: 0.000048
+Epoch 34, Batch 200/422, Loss: 0.3653, LR: 0.000048
+Epoch 34, Batch 210/422, Loss: 0.3361, LR: 0.000048
+Epoch 34, Batch 220/422, Loss: 0.4011, LR: 0.000048
+Epoch 34, Batch 230/422, Loss: 0.2426, LR: 0.000048
+Epoch 34, Batch 240/422, Loss: 0.3829, LR: 0.000048
+Epoch 34, Batch 250/422, Loss: 0.2443, LR: 0.000048
+Epoch 34, Batch 260/422, Loss: 0.4284, LR: 0.000048
+Epoch 34, Batch 270/422, Loss: 0.3668, LR: 0.000048
+Epoch 34, Batch 280/422, Loss: 0.4356, LR: 0.000048
+Epoch 34, Batch 290/422, Loss: 0.2981, LR: 0.000048
+Epoch 34, Batch 300/422, Loss: 0.3031, LR: 0.000048
+Epoch 34, Batch 310/422, Loss: 0.3518, LR: 0.000048
+Epoch 34, Batch 320/422, Loss: 0.2611, LR: 0.000048
+Epoch 34, Batch 330/422, Loss: 0.2227, LR: 0.000048
+Epoch 34, Batch 340/422, Loss: 0.4118, LR: 0.000048
+Epoch 34, Batch 350/422, Loss: 0.3337, LR: 0.000048
+Epoch 34, Batch 360/422, Loss: 0.3857, LR: 0.000048
+Epoch 34, Batch 370/422, Loss: 0.3303, LR: 0.000048
+Epoch 34, Batch 380/422, Loss: 0.3763, LR: 0.000048
+Epoch 34, Batch 390/422, Loss: 0.4, LR: 0.000048
+Epoch 34, Batch 400/422, Loss: 0.3454, LR: 0.000048
+Epoch 34, Batch 410/422, Loss: 0.3404, LR: 0.000048
+Epoch 34, Batch 420/422, Loss: 0.2911, LR: 0.000048
+
+Train Loss: 0.2871
+Val Loss: 1.3651
+mAP@0.50=0.603, mAP@0.50:0.95=0.3525, Precision=0.6528, Recall=0.7258, F1=0.6745
+
+==================================================
+Epoch 35/50
+==================================================
+Epoch 35, Batch 0/422, Loss: 0.2868, LR: 0.000048
+Epoch 35, Batch 10/422, Loss: 0.2786, LR: 0.000048
+Epoch 35, Batch 20/422, Loss: 0.3153, LR: 0.000048
+Epoch 35, Batch 30/422, Loss: 0.4011, LR: 0.000048
+Epoch 35, Batch 40/422, Loss: 0.3392, LR: 0.000048
+Epoch 35, Batch 50/422, Loss: 0.4213, LR: 0.000048
+Epoch 35, Batch 60/422, Loss: 0.2892, LR: 0.000048
+Epoch 35, Batch 70/422, Loss: 0.3725, LR: 0.000048
+Epoch 35, Batch 80/422, Loss: 0.35, LR: 0.000048
+Epoch 35, Batch 90/422, Loss: 0.3872, LR: 0.000048
+Epoch 35, Batch 100/422, Loss: 0.3881, LR: 0.000048
+Epoch 35, Batch 110/422, Loss: 0.2814, LR: 0.000048
+Epoch 35, Batch 120/422, Loss: 0.4021, LR: 0.000048
+Epoch 35, Batch 130/422, Loss: 0.3897, LR: 0.000048
+Epoch 35, Batch 140/422, Loss: 0.2981, LR: 0.000048
+Epoch 35, Batch 150/422, Loss: 0.2662, LR: 0.000048
+Epoch 35, Batch 160/422, Loss: 0.2387, LR: 0.000048
+Epoch 35, Batch 170/422, Loss: 0.2736, LR: 0.000048
+Epoch 35, Batch 180/422, Loss: 0.2975, LR: 0.000048
+Epoch 35, Batch 190/422, Loss: 0.2476, LR: 0.000048
+Epoch 35, Batch 200/422, Loss: 0.2586, LR: 0.000048
+Epoch 35, Batch 210/422, Loss: 0.3679, LR: 0.000048
+Epoch 35, Batch 220/422, Loss: 0.4145, LR: 0.000048
+Epoch 35, Batch 230/422, Loss: 0.3574, LR: 0.000048
+Epoch 35, Batch 240/422, Loss: 0.2532, LR: 0.000048
+Epoch 35, Batch 250/422, Loss: 0.2684, LR: 0.000048
+Epoch 35, Batch 260/422, Loss: 0.415, LR: 0.000048
+Epoch 35, Batch 270/422, Loss: 0.286, LR: 0.000048
+Epoch 35, Batch 280/422, Loss: 0.3762, LR: 0.000048
+Epoch 35, Batch 290/422, Loss: 0.3199, LR: 0.000048
+Epoch 35, Batch 300/422, Loss: 0.3088, LR: 0.000048
+Epoch 35, Batch 310/422, Loss: 0.4154, LR: 0.000048
+Epoch 35, Batch 320/422, Loss: 0.3988, LR: 0.000048
+Epoch 35, Batch 330/422, Loss: 0.308, LR: 0.000048
+Epoch 35, Batch 340/422, Loss: 0.3525, LR: 0.000048
+Epoch 35, Batch 350/422, Loss: 0.3473, LR: 0.000048
+Epoch 35, Batch 360/422, Loss: 0.2457, LR: 0.000048
+Epoch 35, Batch 370/422, Loss: 0.3173, LR: 0.000048
+Epoch 35, Batch 380/422, Loss: 0.408, LR: 0.000048
+Epoch 35, Batch 390/422, Loss: 0.286, LR: 0.000048
+Epoch 35, Batch 400/422, Loss: 0.3352, LR: 0.000048
+Epoch 35, Batch 410/422, Loss: 0.3237, LR: 0.000048
+Epoch 35, Batch 420/422, Loss: 0.3199, LR: 0.000048
+
+Train Loss: 0.2946
+Val Loss: 1.3519
+mAP@0.50=0.6078, mAP@0.50:0.95=0.3518, Precision=0.6491, Recall=0.7144, F1=0.6731
+
+==================================================
+Epoch 36/50
+==================================================
+Epoch 36, Batch 0/422, Loss: 0.4315, LR: 0.000048
+Epoch 36, Batch 10/422, Loss: 0.4212, LR: 0.000048
+Epoch 36, Batch 20/422, Loss: 0.3284, LR: 0.000048
+Epoch 36, Batch 30/422, Loss: 0.2961, LR: 0.000048
+Epoch 36, Batch 40/422, Loss: 0.3462, LR: 0.000048
+Epoch 36, Batch 50/422, Loss: 0.2754, LR: 0.000048
+Epoch 36, Batch 60/422, Loss: 0.2825, LR: 0.000048
+Epoch 36, Batch 70/422, Loss: 0.3831, LR: 0.000048
+Epoch 36, Batch 80/422, Loss: 0.4159, LR: 0.000048
+Epoch 36, Batch 90/422, Loss: 0.2463, LR: 0.000048
+Epoch 36, Batch 100/422, Loss: 0.2511, LR: 0.000048
+Epoch 36, Batch 110/422, Loss: 0.4189, LR: 0.000048
+Epoch 36, Batch 120/422, Loss: 0.4203, LR: 0.000048
+Epoch 36, Batch 130/422, Loss: 0.3845, LR: 0.000048
+Epoch 36, Batch 140/422, Loss: 0.2802, LR: 0.000048
+Epoch 36, Batch 150/422, Loss: 0.2645, LR: 0.000048
+Epoch 36, Batch 160/422, Loss: 0.3679, LR: 0.000048
+Epoch 36, Batch 170/422, Loss: 0.3375, LR: 0.000048
+Epoch 36, Batch 180/422, Loss: 0.4353, LR: 0.000048
+Epoch 36, Batch 190/422, Loss: 0.2344, LR: 0.000048
+Epoch 36, Batch 200/422, Loss: 0.3606, LR: 0.000048
+Epoch 36, Batch 210/422, Loss: 0.3954, LR: 0.000048
+Epoch 36, Batch 220/422, Loss: 0.2497, LR: 0.000048
+Epoch 36, Batch 230/422, Loss: 0.2434, LR: 0.000048
+Epoch 36, Batch 240/422, Loss: 0.2473, LR: 0.000048
+Epoch 36, Batch 250/422, Loss: 0.3429, LR: 0.000048
+Epoch 36, Batch 260/422, Loss: 0.2652, LR: 0.000048
+Epoch 36, Batch 270/422, Loss: 0.4073, LR: 0.000048
+Epoch 36, Batch 280/422, Loss: 0.2794, LR: 0.000048
+Epoch 36, Batch 290/422, Loss: 0.4331, LR: 0.000048
+Epoch 36, Batch 300/422, Loss: 0.3819, LR: 0.000048
+Epoch 36, Batch 310/422, Loss: 0.3512, LR: 0.000048
+Epoch 36, Batch 320/422, Loss: 0.2353, LR: 0.000048
+Epoch 36, Batch 330/422, Loss: 0.3083, LR: 0.000048
+Epoch 36, Batch 340/422, Loss: 0.3989, LR: 0.000048
+Epoch 36, Batch 350/422, Loss: 0.3587, LR: 0.000048
+Epoch 36, Batch 360/422, Loss: 0.328, LR: 0.000048
+Epoch 36, Batch 370/422, Loss: 0.3214, LR: 0.000048
+Epoch 36, Batch 380/422, Loss: 0.3373, LR: 0.000048
+Epoch 36, Batch 390/422, Loss: 0.2379, LR: 0.000048
+Epoch 36, Batch 400/422, Loss: 0.2664, LR: 0.000048
+Epoch 36, Batch 410/422, Loss: 0.2716, LR: 0.000048
+Epoch 36, Batch 420/422, Loss: 0.2495, LR: 0.000048
+
+Train Loss: 0.2746
+Val Loss: 1.3432
+mAP@0.50=0.5961, mAP@0.50:0.95=0.3521, Precision=0.6346, Recall=0.7137, F1=0.6703
+
+==================================================
+Epoch 37/50
+==================================================
+Epoch 37, Batch 0/422, Loss: 0.4383, LR: 0.000048
+Epoch 37, Batch 10/422, Loss: 0.2461, LR: 0.000048
+Epoch 37, Batch 20/422, Loss: 0.3343, LR: 0.000048
+Epoch 37, Batch 30/422, Loss: 0.2423, LR: 0.000048
+Epoch 37, Batch 40/422, Loss: 0.2206, LR: 0.000048
+Epoch 37, Batch 50/422, Loss: 0.3726, LR: 0.000048
+Epoch 37, Batch 60/422, Loss: 0.2459, LR: 0.000048
+Epoch 37, Batch 70/422, Loss: 0.3779, LR: 0.000048
+Epoch 37, Batch 80/422, Loss: 0.3467, LR: 0.000048
+Epoch 37, Batch 90/422, Loss: 0.382, LR: 0.000048
+Epoch 37, Batch 100/422, Loss: 0.2222, LR: 0.000048
+Epoch 37, Batch 110/422, Loss: 0.238, LR: 0.000048
+Epoch 37, Batch 120/422, Loss: 0.2292, LR: 0.000048
+Epoch 37, Batch 130/422, Loss: 0.2489, LR: 0.000048
+Epoch 37, Batch 140/422, Loss: 0.2841, LR: 0.000048
+Epoch 37, Batch 150/422, Loss: 0.2677, LR: 0.000048
+Epoch 37, Batch 160/422, Loss: 0.2304, LR: 0.000048
+Epoch 37, Batch 170/422, Loss: 0.329, LR: 0.000048
+Epoch 37, Batch 180/422, Loss: 0.2233, LR: 0.000048
+Epoch 37, Batch 190/422, Loss: 0.3111, LR: 0.000048
+Epoch 37, Batch 200/422, Loss: 0.347, LR: 0.000048
+Epoch 37, Batch 210/422, Loss: 0.3349, LR: 0.000048
+Epoch 37, Batch 220/422, Loss: 0.3316, LR: 0.000048
+Epoch 37, Batch 230/422, Loss: 0.2236, LR: 0.000048
+Epoch 37, Batch 240/422, Loss: 0.2852, LR: 0.000048
+Epoch 37, Batch 250/422, Loss: 0.3863, LR: 0.000048
+Epoch 37, Batch 260/422, Loss: 0.3725, LR: 0.000048
+Epoch 37, Batch 270/422, Loss: 0.3113, LR: 0.000048
+Epoch 37, Batch 280/422, Loss: 0.4248, LR: 0.000048
+Epoch 37, Batch 290/422, Loss: 0.3994, LR: 0.000048
+Epoch 37, Batch 300/422, Loss: 0.342, LR: 0.000048
+Epoch 37, Batch 310/422, Loss: 0.2308, LR: 0.000048
+Epoch 37, Batch 320/422, Loss: 0.3999, LR: 0.000048
+Epoch 37, Batch 330/422, Loss: 0.3871, LR: 0.000048
+Epoch 37, Batch 340/422, Loss: 0.3123, LR: 0.000048
+Epoch 37, Batch 350/422, Loss: 0.322, LR: 0.000048
+Epoch 37, Batch 360/422, Loss: 0.36, LR: 0.000048
+Epoch 37, Batch 370/422, Loss: 0.2695, LR: 0.000048
+Epoch 37, Batch 380/422, Loss: 0.2238, LR: 0.000048
+Epoch 37, Batch 390/422, Loss: 0.4329, LR: 0.000048
+Epoch 37, Batch 400/422, Loss: 0.3294, LR: 0.000048
+Epoch 37, Batch 410/422, Loss: 0.4119, LR: 0.000048
+Epoch 37, Batch 420/422, Loss: 0.3912, LR: 0.000048
+
+Train Loss: 0.2776
+Val Loss: 1.3564
+mAP@0.50=0.6029, mAP@0.50:0.95=0.3653, Precision=0.6351, Recall=0.7232, F1=0.6899
+
+==================================================
+Epoch 38/50
+==================================================
+Epoch 38, Batch 0/422, Loss: 0.261, LR: 0.000048
+Epoch 38, Batch 10/422, Loss: 0.2259, LR: 0.000048
+Epoch 38, Batch 20/422, Loss: 0.3052, LR: 0.000048
+Epoch 38, Batch 30/422, Loss: 0.4315, LR: 0.000048
+Epoch 38, Batch 40/422, Loss: 0.407, LR: 0.000048
+Epoch 38, Batch 50/422, Loss: 0.2354, LR: 0.000048
+Epoch 38, Batch 60/422, Loss: 0.344, LR: 0.000048
+Epoch 38, Batch 70/422, Loss: 0.3404, LR: 0.000048
+Epoch 38, Batch 80/422, Loss: 0.3923, LR: 0.000048
+Epoch 38, Batch 90/422, Loss: 0.2983, LR: 0.000048
+Epoch 38, Batch 100/422, Loss: 0.2775, LR: 0.000048
+Epoch 38, Batch 110/422, Loss: 0.3959, LR: 0.000048
+Epoch 38, Batch 120/422, Loss: 0.3413, LR: 0.000048
+Epoch 38, Batch 130/422, Loss: 0.2835, LR: 0.000048
+Epoch 38, Batch 140/422, Loss: 0.2802, LR: 0.000048
+Epoch 38, Batch 150/422, Loss: 0.2755, LR: 0.000048
+Epoch 38, Batch 160/422, Loss: 0.2825, LR: 0.000048
+Epoch 38, Batch 170/422, Loss: 0.4071, LR: 0.000048
+Epoch 38, Batch 180/422, Loss: 0.3449, LR: 0.000048
+Epoch 38, Batch 190/422, Loss: 0.433, LR: 0.000048
+Epoch 38, Batch 200/422, Loss: 0.2785, LR: 0.000048
+Epoch 38, Batch 210/422, Loss: 0.4206, LR: 0.000048
+Epoch 38, Batch 220/422, Loss: 0.3295, LR: 0.000048
+Epoch 38, Batch 230/422, Loss: 0.3327, LR: 0.000048
+Epoch 38, Batch 240/422, Loss: 0.3673, LR: 0.000048
+Epoch 38, Batch 250/422, Loss: 0.3703, LR: 0.000048
+Epoch 38, Batch 260/422, Loss: 0.2456, LR: 0.000048
+Epoch 38, Batch 270/422, Loss: 0.2628, LR: 0.000048
+Epoch 38, Batch 280/422, Loss: 0.3538, LR: 0.000048
+Epoch 38, Batch 290/422, Loss: 0.3034, LR: 0.000048
+Epoch 38, Batch 300/422, Loss: 0.2828, LR: 0.000048
+Epoch 38, Batch 310/422, Loss: 0.3799, LR: 0.000048
+Epoch 38, Batch 320/422, Loss: 0.3206, LR: 0.000048
+Epoch 38, Batch 330/422, Loss: 0.4329, LR: 0.000048
+Epoch 38, Batch 340/422, Loss: 0.2359, LR: 0.000048
+Epoch 38, Batch 350/422, Loss: 0.3677, LR: 0.000048
+Epoch 38, Batch 360/422, Loss: 0.2617, LR: 0.000048
+Epoch 38, Batch 370/422, Loss: 0.2941, LR: 0.000048
+Epoch 38, Batch 380/422, Loss: 0.4116, LR: 0.000048
+Epoch 38, Batch 390/422, Loss: 0.3872, LR: 0.000048
+Epoch 38, Batch 400/422, Loss: 0.3219, LR: 0.000048
+Epoch 38, Batch 410/422, Loss: 0.343, LR: 0.000048
+Epoch 38, Batch 420/422, Loss: 0.3097, LR: 0.000048
+
+Train Loss: 0.2996
+Val Loss: 1.3645
+mAP@0.50=0.6189, mAP@0.50:0.95=0.3539, Precision=0.6498, Recall=0.7047, F1=0.674
+
+==================================================
+Epoch 39/50
+==================================================
+Epoch 39, Batch 0/422, Loss: 0.2699, LR: 0.000048
+Epoch 39, Batch 10/422, Loss: 0.2411, LR: 0.000048
+Epoch 39, Batch 20/422, Loss: 0.362, LR: 0.000048
+Epoch 39, Batch 30/422, Loss: 0.3109, LR: 0.000048
+Epoch 39, Batch 40/422, Loss: 0.323, LR: 0.000048
+Epoch 39, Batch 50/422, Loss: 0.3784, LR: 0.000048
+Epoch 39, Batch 60/422, Loss: 0.3571, LR: 0.000048
+Epoch 39, Batch 70/422, Loss: 0.3918, LR: 0.000048
+Epoch 39, Batch 80/422, Loss: 0.4003, LR: 0.000048
+Epoch 39, Batch 90/422, Loss: 0.4198, LR: 0.000048
+Epoch 39, Batch 100/422, Loss: 0.3155, LR: 0.000048
+Epoch 39, Batch 110/422, Loss: 0.4065, LR: 0.000048
+Epoch 39, Batch 120/422, Loss: 0.2397, LR: 0.000048
+Epoch 39, Batch 130/422, Loss: 0.3498, LR: 0.000048
+Epoch 39, Batch 140/422, Loss: 0.3829, LR: 0.000048
+Epoch 39, Batch 150/422, Loss: 0.2492, LR: 0.000048
+Epoch 39, Batch 160/422, Loss: 0.4107, LR: 0.000048
+Epoch 39, Batch 170/422, Loss: 0.3268, LR: 0.000048
+Epoch 39, Batch 180/422, Loss: 0.2867, LR: 0.000048
+Epoch 39, Batch 190/422, Loss: 0.4249, LR: 0.000048
+Epoch 39, Batch 200/422, Loss: 0.3438, LR: 0.000048
+Epoch 39, Batch 210/422, Loss: 0.2211, LR: 0.000048
+Epoch 39, Batch 220/422, Loss: 0.3222, LR: 0.000048
+Epoch 39, Batch 230/422, Loss: 0.4239, LR: 0.000048
+Epoch 39, Batch 240/422, Loss: 0.2926, LR: 0.000048
+Epoch 39, Batch 250/422, Loss: 0.2368, LR: 0.000048
+Epoch 39, Batch 260/422, Loss: 0.2606, LR: 0.000048
+Epoch 39, Batch 270/422, Loss: 0.3069, LR: 0.000048
+Epoch 39, Batch 280/422, Loss: 0.2894, LR: 0.000048
+Epoch 39, Batch 290/422, Loss: 0.2907, LR: 0.000048
+Epoch 39, Batch 300/422, Loss: 0.2211, LR: 0.000048
+Epoch 39, Batch 310/422, Loss: 0.4047, LR: 0.000048
+Epoch 39, Batch 320/422, Loss: 0.4186, LR: 0.000048
+Epoch 39, Batch 330/422, Loss: 0.368, LR: 0.000048
+Epoch 39, Batch 340/422, Loss: 0.3818, LR: 0.000048
+Epoch 39, Batch 350/422, Loss: 0.2391, LR: 0.000048
+Epoch 39, Batch 360/422, Loss: 0.3715, LR: 0.000048
+Epoch 39, Batch 370/422, Loss: 0.42, LR: 0.000048
+Epoch 39, Batch 380/422, Loss: 0.3095, LR: 0.000048
+Epoch 39, Batch 390/422, Loss: 0.2628, LR: 0.000048
+Epoch 39, Batch 400/422, Loss: 0.351, LR: 0.000048
+Epoch 39, Batch 410/422, Loss: 0.4012, LR: 0.000048
+Epoch 39, Batch 420/422, Loss: 0.3653, LR: 0.000048
+
+Train Loss: 0.3046
+Val Loss: 1.3801
+mAP@0.50=0.5903, mAP@0.50:0.95=0.3666, Precision=0.6546, Recall=0.7087, F1=0.6857
+
+==================================================
+Epoch 40/50
+==================================================
+Epoch 40, Batch 0/422, Loss: 0.2779, LR: 0.000048
+Epoch 40, Batch 10/422, Loss: 0.2401, LR: 0.000048
+Epoch 40, Batch 20/422, Loss: 0.3957, LR: 0.000048
+Epoch 40, Batch 30/422, Loss: 0.3999, LR: 0.000048
+Epoch 40, Batch 40/422, Loss: 0.2444, LR: 0.000048
+Epoch 40, Batch 50/422, Loss: 0.3285, LR: 0.000048
+Epoch 40, Batch 60/422, Loss: 0.2341, LR: 0.000048
+Epoch 40, Batch 70/422, Loss: 0.2506, LR: 0.000048
+Epoch 40, Batch 80/422, Loss: 0.4243, LR: 0.000048
+Epoch 40, Batch 90/422, Loss: 0.2751, LR: 0.000048
+Epoch 40, Batch 100/422, Loss: 0.2683, LR: 0.000048
+Epoch 40, Batch 110/422, Loss: 0.4329, LR: 0.000048
+Epoch 40, Batch 120/422, Loss: 0.3815, LR: 0.000048
+Epoch 40, Batch 130/422, Loss: 0.3119, LR: 0.000048
+Epoch 40, Batch 140/422, Loss: 0.4079, LR: 0.000048
+Epoch 40, Batch 150/422, Loss: 0.434, LR: 0.000048
+Epoch 40, Batch 160/422, Loss: 0.4388, LR: 0.000048
+Epoch 40, Batch 170/422, Loss: 0.3989, LR: 0.000048
+Epoch 40, Batch 180/422, Loss: 0.4185, LR: 0.000048
+Epoch 40, Batch 190/422, Loss: 0.3073, LR: 0.000048
+Epoch 40, Batch 200/422, Loss: 0.2637, LR: 0.000048
+Epoch 40, Batch 210/422, Loss: 0.2521, LR: 0.000048
+Epoch 40, Batch 220/422, Loss: 0.2989, LR: 0.000048
+Epoch 40, Batch 230/422, Loss: 0.2271, LR: 0.000048
+Epoch 40, Batch 240/422, Loss: 0.3881, LR: 0.000048
+Epoch 40, Batch 250/422, Loss: 0.3277, LR: 0.000048
+Epoch 40, Batch 260/422, Loss: 0.2913, LR: 0.000048
+Epoch 40, Batch 270/422, Loss: 0.2761, LR: 0.000048
+Epoch 40, Batch 280/422, Loss: 0.4104, LR: 0.000048
+Epoch 40, Batch 290/422, Loss: 0.3748, LR: 0.000048
+Epoch 40, Batch 300/422, Loss: 0.2719, LR: 0.000048
+Epoch 40, Batch 310/422, Loss: 0.3564, LR: 0.000048
+Epoch 40, Batch 320/422, Loss: 0.3647, LR: 0.000048
+Epoch 40, Batch 330/422, Loss: 0.3862, LR: 0.000048
+Epoch 40, Batch 340/422, Loss: 0.3799, LR: 0.000048
+Epoch 40, Batch 350/422, Loss: 0.2862, LR: 0.000048
+Epoch 40, Batch 360/422, Loss: 0.2588, LR: 0.000048
+Epoch 40, Batch 370/422, Loss: 0.2482, LR: 0.000048
+Epoch 40, Batch 380/422, Loss: 0.3323, LR: 0.000048
+Epoch 40, Batch 390/422, Loss: 0.3144, LR: 0.000048
+Epoch 40, Batch 400/422, Loss: 0.3265, LR: 0.000048
+Epoch 40, Batch 410/422, Loss: 0.2516, LR: 0.000048
+Epoch 40, Batch 420/422, Loss: 0.3857, LR: 0.000048
+
+Train Loss: 0.3025
+Val Loss: 1.3941
+mAP@0.50=0.607, mAP@0.50:0.95=0.3652, Precision=0.6358, Recall=0.7033, F1=0.6873
+
+==================================================
+Epoch 41/50
+==================================================
+Epoch 41, Batch 0/422, Loss: 0.292, LR: 0.000048
+Epoch 41, Batch 10/422, Loss: 0.303, LR: 0.000048
+Epoch 41, Batch 20/422, Loss: 0.4, LR: 0.000048
+Epoch 41, Batch 30/422, Loss: 0.2995, LR: 0.000048
+Epoch 41, Batch 40/422, Loss: 0.3298, LR: 0.000048
+Epoch 41, Batch 50/422, Loss: 0.3279, LR: 0.000048
+Epoch 41, Batch 60/422, Loss: 0.2492, LR: 0.000048
+Epoch 41, Batch 70/422, Loss: 0.3997, LR: 0.000048
+Epoch 41, Batch 80/422, Loss: 0.356, LR: 0.000048
+Epoch 41, Batch 90/422, Loss: 0.4297, LR: 0.000048
+Epoch 41, Batch 100/422, Loss: 0.3735, LR: 0.000048
+Epoch 41, Batch 110/422, Loss: 0.361, LR: 0.000048
+Epoch 41, Batch 120/422, Loss: 0.2378, LR: 0.000048
+Epoch 41, Batch 130/422, Loss: 0.2247, LR: 0.000048
+Epoch 41, Batch 140/422, Loss: 0.4334, LR: 0.000048
+Epoch 41, Batch 150/422, Loss: 0.36, LR: 0.000048
+Epoch 41, Batch 160/422, Loss: 0.4335, LR: 0.000048
+Epoch 41, Batch 170/422, Loss: 0.4053, LR: 0.000048
+Epoch 41, Batch 180/422, Loss: 0.3547, LR: 0.000048
+Epoch 41, Batch 190/422, Loss: 0.274, LR: 0.000048
+Epoch 41, Batch 200/422, Loss: 0.2667, LR: 0.000048
+Epoch 41, Batch 210/422, Loss: 0.273, LR: 0.000048
+Epoch 41, Batch 220/422, Loss: 0.2876, LR: 0.000048
+Epoch 41, Batch 230/422, Loss: 0.4251, LR: 0.000048
+Epoch 41, Batch 240/422, Loss: 0.4327, LR: 0.000048
+Epoch 41, Batch 250/422, Loss: 0.2287, LR: 0.000048
+Epoch 41, Batch 260/422, Loss: 0.4375, LR: 0.000048
+Epoch 41, Batch 270/422, Loss: 0.4117, LR: 0.000048
+Epoch 41, Batch 280/422, Loss: 0.3902, LR: 0.000048
+Epoch 41, Batch 290/422, Loss: 0.3347, LR: 0.000048
+Epoch 41, Batch 300/422, Loss: 0.3381, LR: 0.000048
+Epoch 41, Batch 310/422, Loss: 0.3511, LR: 0.000048
+Epoch 41, Batch 320/422, Loss: 0.2652, LR: 0.000048
+Epoch 41, Batch 330/422, Loss: 0.3482, LR: 0.000048
+Epoch 41, Batch 340/422, Loss: 0.3418, LR: 0.000048
+Epoch 41, Batch 350/422, Loss: 0.27, LR: 0.000048
+Epoch 41, Batch 360/422, Loss: 0.4105, LR: 0.000048
+Epoch 41, Batch 370/422, Loss: 0.3714, LR: 0.000048
+Epoch 41, Batch 380/422, Loss: 0.3715, LR: 0.000048
+Epoch 41, Batch 390/422, Loss: 0.4111, LR: 0.000048
+Epoch 41, Batch 400/422, Loss: 0.3319, LR: 0.000048
+Epoch 41, Batch 410/422, Loss: 0.2554, LR: 0.000048
+Epoch 41, Batch 420/422, Loss: 0.3607, LR: 0.000048
+
+Train Loss: 0.291
+Val Loss: 1.39
+mAP@0.50=0.6002, mAP@0.50:0.95=0.3627, Precision=0.6522, Recall=0.7219, F1=0.684
+
+==================================================
+Epoch 42/50
+==================================================
+Epoch 42, Batch 0/422, Loss: 0.3837, LR: 0.000048
+Epoch 42, Batch 10/422, Loss: 0.3176, LR: 0.000048
+Epoch 42, Batch 20/422, Loss: 0.3492, LR: 0.000048
+Epoch 42, Batch 30/422, Loss: 0.2696, LR: 0.000048
+Epoch 42, Batch 40/422, Loss: 0.4136, LR: 0.000048
+Epoch 42, Batch 50/422, Loss: 0.2343, LR: 0.000048
+Epoch 42, Batch 60/422, Loss: 0.4203, LR: 0.000048
+Epoch 42, Batch 70/422, Loss: 0.355, LR: 0.000048
+Epoch 42, Batch 80/422, Loss: 0.4354, LR: 0.000048
+Epoch 42, Batch 90/422, Loss: 0.3485, LR: 0.000048
+Epoch 42, Batch 100/422, Loss: 0.2221, LR: 0.000048
+Epoch 42, Batch 110/422, Loss: 0.3661, LR: 0.000048
+Epoch 42, Batch 120/422, Loss: 0.3607, LR: 0.000048
+Epoch 42, Batch 130/422, Loss: 0.416, LR: 0.000048
+Epoch 42, Batch 140/422, Loss: 0.4391, LR: 0.000048
+Epoch 42, Batch 150/422, Loss: 0.3507, LR: 0.000048
+Epoch 42, Batch 160/422, Loss: 0.4111, LR: 0.000048
+Epoch 42, Batch 170/422, Loss: 0.4186, LR: 0.000048
+Epoch 42, Batch 180/422, Loss: 0.3979, LR: 0.000048
+Epoch 42, Batch 190/422, Loss: 0.4067, LR: 0.000048
+Epoch 42, Batch 200/422, Loss: 0.3216, LR: 0.000048
+Epoch 42, Batch 210/422, Loss: 0.3759, LR: 0.000048
+Epoch 42, Batch 220/422, Loss: 0.3453, LR: 0.000048
+Epoch 42, Batch 230/422, Loss: 0.366, LR: 0.000048
+Epoch 42, Batch 240/422, Loss: 0.2458, LR: 0.000048
+Epoch 42, Batch 250/422, Loss: 0.3134, LR: 0.000048
+Epoch 42, Batch 260/422, Loss: 0.2732, LR: 0.000048
+Epoch 42, Batch 270/422, Loss: 0.3433, LR: 0.000048
+Epoch 42, Batch 280/422, Loss: 0.3205, LR: 0.000048
+Epoch 42, Batch 290/422, Loss: 0.3391, LR: 0.000048
+Epoch 42, Batch 300/422, Loss: 0.3591, LR: 0.000048
+Epoch 42, Batch 310/422, Loss: 0.3409, LR: 0.000048
+Epoch 42, Batch 320/422, Loss: 0.3803, LR: 0.000048
+Epoch 42, Batch 330/422, Loss: 0.3961, LR: 0.000048
+Epoch 42, Batch 340/422, Loss: 0.4039, LR: 0.000048
+Epoch 42, Batch 350/422, Loss: 0.4272, LR: 0.000048
+Epoch 42, Batch 360/422, Loss: 0.3524, LR: 0.000048
+Epoch 42, Batch 370/422, Loss: 0.3465, LR: 0.000048
+Epoch 42, Batch 380/422, Loss: 0.4312, LR: 0.000048
+Epoch 42, Batch 390/422, Loss: 0.2486, LR: 0.000048
+Epoch 42, Batch 400/422, Loss: 0.2443, LR: 0.000048
+Epoch 42, Batch 410/422, Loss: 0.3253, LR: 0.000048
+Epoch 42, Batch 420/422, Loss: 0.2737, LR: 0.000048
+
+Train Loss: 0.299
+Val Loss: 1.3621
+mAP@0.50=0.5983, mAP@0.50:0.95=0.3683, Precision=0.648, Recall=0.7152, F1=0.679
+
+==================================================
+Epoch 43/50
+==================================================
+Epoch 43, Batch 0/422, Loss: 0.3634, LR: 0.000048
+Epoch 43, Batch 10/422, Loss: 0.3938, LR: 0.000048
+Epoch 43, Batch 20/422, Loss: 0.3791, LR: 0.000048
+Epoch 43, Batch 30/422, Loss: 0.3334, LR: 0.000048
+Epoch 43, Batch 40/422, Loss: 0.3094, LR: 0.000048
+Epoch 43, Batch 50/422, Loss: 0.4109, LR: 0.000048
+Epoch 43, Batch 60/422, Loss: 0.3742, LR: 0.000048
+Epoch 43, Batch 70/422, Loss: 0.3818, LR: 0.000048
+Epoch 43, Batch 80/422, Loss: 0.3295, LR: 0.000048
+Epoch 43, Batch 90/422, Loss: 0.2601, LR: 0.000048
+Epoch 43, Batch 100/422, Loss: 0.4308, LR: 0.000048
+Epoch 43, Batch 110/422, Loss: 0.3715, LR: 0.000048
+Epoch 43, Batch 120/422, Loss: 0.3102, LR: 0.000048
+Epoch 43, Batch 130/422, Loss: 0.3995, LR: 0.000048
+Epoch 43, Batch 140/422, Loss: 0.437, LR: 0.000048
+Epoch 43, Batch 150/422, Loss: 0.3036, LR: 0.000048
+Epoch 43, Batch 160/422, Loss: 0.3479, LR: 0.000048
+Epoch 43, Batch 170/422, Loss: 0.2782, LR: 0.000048
+Epoch 43, Batch 180/422, Loss: 0.4047, LR: 0.000048
+Epoch 43, Batch 190/422, Loss: 0.273, LR: 0.000048
+Epoch 43, Batch 200/422, Loss: 0.397, LR: 0.000048
+Epoch 43, Batch 210/422, Loss: 0.427, LR: 0.000048
+Epoch 43, Batch 220/422, Loss: 0.3193, LR: 0.000048
+Epoch 43, Batch 230/422, Loss: 0.4324, LR: 0.000048
+Epoch 43, Batch 240/422, Loss: 0.2473, LR: 0.000048
+Epoch 43, Batch 250/422, Loss: 0.4116, LR: 0.000048
+Epoch 43, Batch 260/422, Loss: 0.3313, LR: 0.000048
+Epoch 43, Batch 270/422, Loss: 0.4176, LR: 0.000048
+Epoch 43, Batch 280/422, Loss: 0.4058, LR: 0.000048
+Epoch 43, Batch 290/422, Loss: 0.3475, LR: 0.000048
+Epoch 43, Batch 300/422, Loss: 0.2631, LR: 0.000048
+Epoch 43, Batch 310/422, Loss: 0.3561, LR: 0.000048
+Epoch 43, Batch 320/422, Loss: 0.2419, LR: 0.000048
+Epoch 43, Batch 330/422, Loss: 0.423, LR: 0.000048
+Epoch 43, Batch 340/422, Loss: 0.429, LR: 0.000048
+Epoch 43, Batch 350/422, Loss: 0.2755, LR: 0.000048
+Epoch 43, Batch 360/422, Loss: 0.2828, LR: 0.000048
+Epoch 43, Batch 370/422, Loss: 0.3754, LR: 0.000048
+Epoch 43, Batch 380/422, Loss: 0.278, LR: 0.000048
+Epoch 43, Batch 390/422, Loss: 0.4152, LR: 0.000048
+Epoch 43, Batch 400/422, Loss: 0.3615, LR: 0.000048
+Epoch 43, Batch 410/422, Loss: 0.3597, LR: 0.000048
+Epoch 43, Batch 420/422, Loss: 0.4259, LR: 0.000048
+
+Train Loss: 0.2967
+Val Loss: 1.3615
+mAP@0.50=0.6117, mAP@0.50:0.95=0.3538, Precision=0.6469, Recall=0.7217, F1=0.672
+
+==================================================
+Epoch 44/50
+==================================================
+Epoch 44, Batch 0/422, Loss: 0.3215, LR: 0.000048
+Epoch 44, Batch 10/422, Loss: 0.4197, LR: 0.000048
+Epoch 44, Batch 20/422, Loss: 0.4266, LR: 0.000048
+Epoch 44, Batch 30/422, Loss: 0.2932, LR: 0.000048
+Epoch 44, Batch 40/422, Loss: 0.2869, LR: 0.000048
+Epoch 44, Batch 50/422, Loss: 0.4149, LR: 0.000048
+Epoch 44, Batch 60/422, Loss: 0.4145, LR: 0.000048
+Epoch 44, Batch 70/422, Loss: 0.4115, LR: 0.000048
+Epoch 44, Batch 80/422, Loss: 0.3349, LR: 0.000048
+Epoch 44, Batch 90/422, Loss: 0.3516, LR: 0.000048
+Epoch 44, Batch 100/422, Loss: 0.2242, LR: 0.000048
+Epoch 44, Batch 110/422, Loss: 0.2419, LR: 0.000048
+Epoch 44, Batch 120/422, Loss: 0.4384, LR: 0.000048
+Epoch 44, Batch 130/422, Loss: 0.3493, LR: 0.000048
+Epoch 44, Batch 140/422, Loss: 0.3458, LR: 0.000048
+Epoch 44, Batch 150/422, Loss: 0.4348, LR: 0.000048
+Epoch 44, Batch 160/422, Loss: 0.3229, LR: 0.000048
+Epoch 44, Batch 170/422, Loss: 0.3571, LR: 0.000048
+Epoch 44, Batch 180/422, Loss: 0.2954, LR: 0.000048
+Epoch 44, Batch 190/422, Loss: 0.2904, LR: 0.000048
+Epoch 44, Batch 200/422, Loss: 0.264, LR: 0.000048
+Epoch 44, Batch 210/422, Loss: 0.4043, LR: 0.000048
+Epoch 44, Batch 220/422, Loss: 0.28, LR: 0.000048
+Epoch 44, Batch 230/422, Loss: 0.4201, LR: 0.000048
+Epoch 44, Batch 240/422, Loss: 0.3324, LR: 0.000048
+Epoch 44, Batch 250/422, Loss: 0.3405, LR: 0.000048
+Epoch 44, Batch 260/422, Loss: 0.3677, LR: 0.000048
+Epoch 44, Batch 270/422, Loss: 0.3011, LR: 0.000048
+Epoch 44, Batch 280/422, Loss: 0.2351, LR: 0.000048
+Epoch 44, Batch 290/422, Loss: 0.4325, LR: 0.000048
+Epoch 44, Batch 300/422, Loss: 0.319, LR: 0.000048
+Epoch 44, Batch 310/422, Loss: 0.4316, LR: 0.000048
+Epoch 44, Batch 320/422, Loss: 0.4049, LR: 0.000048
+Epoch 44, Batch 330/422, Loss: 0.3813, LR: 0.000048
+Epoch 44, Batch 340/422, Loss: 0.4204, LR: 0.000048
+Epoch 44, Batch 350/422, Loss: 0.3683, LR: 0.000048
+Epoch 44, Batch 360/422, Loss: 0.3459, LR: 0.000048
+Epoch 44, Batch 370/422, Loss: 0.3121, LR: 0.000048
+Epoch 44, Batch 380/422, Loss: 0.2271, LR: 0.000048
+Epoch 44, Batch 390/422, Loss: 0.2247, LR: 0.000048
+Epoch 44, Batch 400/422, Loss: 0.2276, LR: 0.000048
+Epoch 44, Batch 410/422, Loss: 0.3631, LR: 0.000048
+Epoch 44, Batch 420/422, Loss: 0.346, LR: 0.000048
+
+Train Loss: 0.2772
+Val Loss: 1.3464
+mAP@0.50=0.6021, mAP@0.50:0.95=0.3513, Precision=0.6499, Recall=0.7186, F1=0.6739
+
+==================================================
+Epoch 45/50
+==================================================
+Epoch 45, Batch 0/422, Loss: 0.426, LR: 0.000048
+Epoch 45, Batch 10/422, Loss: 0.4094, LR: 0.000048
+Epoch 45, Batch 20/422, Loss: 0.4108, LR: 0.000048
+Epoch 45, Batch 30/422, Loss: 0.4236, LR: 0.000048
+Epoch 45, Batch 40/422, Loss: 0.3724, LR: 0.000048
+Epoch 45, Batch 50/422, Loss: 0.333, LR: 0.000048
+Epoch 45, Batch 60/422, Loss: 0.3533, LR: 0.000048
+Epoch 45, Batch 70/422, Loss: 0.2711, LR: 0.000048
+Epoch 45, Batch 80/422, Loss: 0.4037, LR: 0.000048
+Epoch 45, Batch 90/422, Loss: 0.3809, LR: 0.000048
+Epoch 45, Batch 100/422, Loss: 0.3163, LR: 0.000048
+Epoch 45, Batch 110/422, Loss: 0.2623, LR: 0.000048
+Epoch 45, Batch 120/422, Loss: 0.2304, LR: 0.000048
+Epoch 45, Batch 130/422, Loss: 0.2459, LR: 0.000048
+Epoch 45, Batch 140/422, Loss: 0.4244, LR: 0.000048
+Epoch 45, Batch 150/422, Loss: 0.2382, LR: 0.000048
+Epoch 45, Batch 160/422, Loss: 0.2523, LR: 0.000048
+Epoch 45, Batch 170/422, Loss: 0.4085, LR: 0.000048
+Epoch 45, Batch 180/422, Loss: 0.2885, LR: 0.000048
+Epoch 45, Batch 190/422, Loss: 0.4032, LR: 0.000048
+Epoch 45, Batch 200/422, Loss: 0.3352, LR: 0.000048
+Epoch 45, Batch 210/422, Loss: 0.3859, LR: 0.000048
+Epoch 45, Batch 220/422, Loss: 0.3529, LR: 0.000048
+Epoch 45, Batch 230/422, Loss: 0.4328, LR: 0.000048
+Epoch 45, Batch 240/422, Loss: 0.3253, LR: 0.000048
+Epoch 45, Batch 250/422, Loss: 0.2231, LR: 0.000048
+Epoch 45, Batch 260/422, Loss: 0.288, LR: 0.000048
+Epoch 45, Batch 270/422, Loss: 0.2572, LR: 0.000048
+Epoch 45, Batch 280/422, Loss: 0.2676, LR: 0.000048
+Epoch 45, Batch 290/422, Loss: 0.2967, LR: 0.000048
+Epoch 45, Batch 300/422, Loss: 0.4047, LR: 0.000048
+Epoch 45, Batch 310/422, Loss: 0.3866, LR: 0.000048
+Epoch 45, Batch 320/422, Loss: 0.3465, LR: 0.000048
+Epoch 45, Batch 330/422, Loss: 0.3406, LR: 0.000048
+Epoch 45, Batch 340/422, Loss: 0.4375, LR: 0.000048
+Epoch 45, Batch 350/422, Loss: 0.2576, LR: 0.000048
+Epoch 45, Batch 360/422, Loss: 0.3859, LR: 0.000048
+Epoch 45, Batch 370/422, Loss: 0.3528, LR: 0.000048
+Epoch 45, Batch 380/422, Loss: 0.4159, LR: 0.000048
+Epoch 45, Batch 390/422, Loss: 0.3557, LR: 0.000048
+Epoch 45, Batch 400/422, Loss: 0.3301, LR: 0.000048
+Epoch 45, Batch 410/422, Loss: 0.3256, LR: 0.000048
+Epoch 45, Batch 420/422, Loss: 0.2721, LR: 0.000048
+
+Train Loss: 0.3077
+Val Loss: 1.371
+mAP@0.50=0.594, mAP@0.50:0.95=0.3579, Precision=0.6538, Recall=0.7047, F1=0.6789
+
+==================================================
+Epoch 46/50
+==================================================
+Epoch 46, Batch 0/422, Loss: 0.3177, LR: 0.000048
+Epoch 46, Batch 10/422, Loss: 0.2868, LR: 0.000048
+Epoch 46, Batch 20/422, Loss: 0.4031, LR: 0.000048
+Epoch 46, Batch 30/422, Loss: 0.3615, LR: 0.000048
+Epoch 46, Batch 40/422, Loss: 0.3321, LR: 0.000048
+Epoch 46, Batch 50/422, Loss: 0.2875, LR: 0.000048
+Epoch 46, Batch 60/422, Loss: 0.2628, LR: 0.000048
+Epoch 46, Batch 70/422, Loss: 0.3374, LR: 0.000048
+Epoch 46, Batch 80/422, Loss: 0.3579, LR: 0.000048
+Epoch 46, Batch 90/422, Loss: 0.2561, LR: 0.000048
+Epoch 46, Batch 100/422, Loss: 0.3689, LR: 0.000048
+Epoch 46, Batch 110/422, Loss: 0.2529, LR: 0.000048
+Epoch 46, Batch 120/422, Loss: 0.2651, LR: 0.000048
+Epoch 46, Batch 130/422, Loss: 0.4146, LR: 0.000048
+Epoch 46, Batch 140/422, Loss: 0.4122, LR: 0.000048
+Epoch 46, Batch 150/422, Loss: 0.2918, LR: 0.000048
+Epoch 46, Batch 160/422, Loss: 0.2734, LR: 0.000048
+Epoch 46, Batch 170/422, Loss: 0.3269, LR: 0.000048
+Epoch 46, Batch 180/422, Loss: 0.3364, LR: 0.000048
+Epoch 46, Batch 190/422, Loss: 0.3499, LR: 0.000048
+Epoch 46, Batch 200/422, Loss: 0.2506, LR: 0.000048
+Epoch 46, Batch 210/422, Loss: 0.3125, LR: 0.000048
+Epoch 46, Batch 220/422, Loss: 0.356, LR: 0.000048
+Epoch 46, Batch 230/422, Loss: 0.2609, LR: 0.000048
+Epoch 46, Batch 240/422, Loss: 0.2742, LR: 0.000048
+Epoch 46, Batch 250/422, Loss: 0.3706, LR: 0.000048
+Epoch 46, Batch 260/422, Loss: 0.3896, LR: 0.000048
+Epoch 46, Batch 270/422, Loss: 0.3539, LR: 0.000048
+Epoch 46, Batch 280/422, Loss: 0.2983, LR: 0.000048
+Epoch 46, Batch 290/422, Loss: 0.393, LR: 0.000048
+Epoch 46, Batch 300/422, Loss: 0.3164, LR: 0.000048
+Epoch 46, Batch 310/422, Loss: 0.2493, LR: 0.000048
+Epoch 46, Batch 320/422, Loss: 0.3078, LR: 0.000048
+Epoch 46, Batch 330/422, Loss: 0.3766, LR: 0.000048
+Epoch 46, Batch 340/422, Loss: 0.2304, LR: 0.000048
+Epoch 46, Batch 350/422, Loss: 0.4286, LR: 0.000048
+Epoch 46, Batch 360/422, Loss: 0.3636, LR: 0.000048
+Epoch 46, Batch 370/422, Loss: 0.3509, LR: 0.000048
+Epoch 46, Batch 380/422, Loss: 0.3515, LR: 0.000048
+Epoch 46, Batch 390/422, Loss: 0.4058, LR: 0.000048
+Epoch 46, Batch 400/422, Loss: 0.3536, LR: 0.000048
+Epoch 46, Batch 410/422, Loss: 0.3603, LR: 0.000048
+Epoch 46, Batch 420/422, Loss: 0.3505, LR: 0.000048
+
+Train Loss: 0.2754
+Val Loss: 1.382
+mAP@0.50=0.6027, mAP@0.50:0.95=0.3666, Precision=0.6389, Recall=0.7101, F1=0.6799
+
+==================================================
+Epoch 47/50
+==================================================
+Epoch 47, Batch 0/422, Loss: 0.3228, LR: 0.000048
+Epoch 47, Batch 10/422, Loss: 0.4233, LR: 0.000048
+Epoch 47, Batch 20/422, Loss: 0.3622, LR: 0.000048
+Epoch 47, Batch 30/422, Loss: 0.3696, LR: 0.000048
+Epoch 47, Batch 40/422, Loss: 0.3584, LR: 0.000048
+Epoch 47, Batch 50/422, Loss: 0.3288, LR: 0.000048
+Epoch 47, Batch 60/422, Loss: 0.2674, LR: 0.000048
+Epoch 47, Batch 70/422, Loss: 0.2481, LR: 0.000048
+Epoch 47, Batch 80/422, Loss: 0.2293, LR: 0.000048
+Epoch 47, Batch 90/422, Loss: 0.281, LR: 0.000048
+Epoch 47, Batch 100/422, Loss: 0.4064, LR: 0.000048
+Epoch 47, Batch 110/422, Loss: 0.2806, LR: 0.000048
+Epoch 47, Batch 120/422, Loss: 0.2866, LR: 0.000048
+Epoch 47, Batch 130/422, Loss: 0.2915, LR: 0.000048
+Epoch 47, Batch 140/422, Loss: 0.3368, LR: 0.000048
+Epoch 47, Batch 150/422, Loss: 0.3318, LR: 0.000048
+Epoch 47, Batch 160/422, Loss: 0.2451, LR: 0.000048
+Epoch 47, Batch 170/422, Loss: 0.2777, LR: 0.000048
+Epoch 47, Batch 180/422, Loss: 0.333, LR: 0.000048
+Epoch 47, Batch 190/422, Loss: 0.2366, LR: 0.000048
+Epoch 47, Batch 200/422, Loss: 0.4005, LR: 0.000048
+Epoch 47, Batch 210/422, Loss: 0.2882, LR: 0.000048
+Epoch 47, Batch 220/422, Loss: 0.255, LR: 0.000048
+Epoch 47, Batch 230/422, Loss: 0.3123, LR: 0.000048
+Epoch 47, Batch 240/422, Loss: 0.3539, LR: 0.000048
+Epoch 47, Batch 250/422, Loss: 0.408, LR: 0.000048
+Epoch 47, Batch 260/422, Loss: 0.2725, LR: 0.000048
+Epoch 47, Batch 270/422, Loss: 0.2815, LR: 0.000048
+Epoch 47, Batch 280/422, Loss: 0.4084, LR: 0.000048
+Epoch 47, Batch 290/422, Loss: 0.4163, LR: 0.000048
+Epoch 47, Batch 300/422, Loss: 0.4368, LR: 0.000048
+Epoch 47, Batch 310/422, Loss: 0.2353, LR: 0.000048
+Epoch 47, Batch 320/422, Loss: 0.4347, LR: 0.000048
+Epoch 47, Batch 330/422, Loss: 0.2706, LR: 0.000048
+Epoch 47, Batch 340/422, Loss: 0.3772, LR: 0.000048
+Epoch 47, Batch 350/422, Loss: 0.4244, LR: 0.000048
+Epoch 47, Batch 360/422, Loss: 0.2504, LR: 0.000048
+Epoch 47, Batch 370/422, Loss: 0.4203, LR: 0.000048
+Epoch 47, Batch 380/422, Loss: 0.3441, LR: 0.000048
+Epoch 47, Batch 390/422, Loss: 0.4047, LR: 0.000048
+Epoch 47, Batch 400/422, Loss: 0.2847, LR: 0.000048
+Epoch 47, Batch 410/422, Loss: 0.3229, LR: 0.000048
+Epoch 47, Batch 420/422, Loss: 0.347, LR: 0.000048
+
+Train Loss: 0.2794
+Val Loss: 1.3725
+mAP@0.50=0.6176, mAP@0.50:0.95=0.3642, Precision=0.652, Recall=0.7282, F1=0.6749
+
+==================================================
+Epoch 48/50
+==================================================
+Epoch 48, Batch 0/422, Loss: 0.2779, LR: 0.000048
+Epoch 48, Batch 10/422, Loss: 0.3721, LR: 0.000048
+Epoch 48, Batch 20/422, Loss: 0.4149, LR: 0.000048
+Epoch 48, Batch 30/422, Loss: 0.2331, LR: 0.000048
+Epoch 48, Batch 40/422, Loss: 0.2785, LR: 0.000048
+Epoch 48, Batch 50/422, Loss: 0.3712, LR: 0.000048
+Epoch 48, Batch 60/422, Loss: 0.336, LR: 0.000048
+Epoch 48, Batch 70/422, Loss: 0.3664, LR: 0.000048
+Epoch 48, Batch 80/422, Loss: 0.3812, LR: 0.000048
+Epoch 48, Batch 90/422, Loss: 0.364, LR: 0.000048
+Epoch 48, Batch 100/422, Loss: 0.3975, LR: 0.000048
+Epoch 48, Batch 110/422, Loss: 0.3227, LR: 0.000048
+Epoch 48, Batch 120/422, Loss: 0.3557, LR: 0.000048
+Epoch 48, Batch 130/422, Loss: 0.3771, LR: 0.000048
+Epoch 48, Batch 140/422, Loss: 0.2653, LR: 0.000048
+Epoch 48, Batch 150/422, Loss: 0.3097, LR: 0.000048
+Epoch 48, Batch 160/422, Loss: 0.3904, LR: 0.000048
+Epoch 48, Batch 170/422, Loss: 0.3744, LR: 0.000048
+Epoch 48, Batch 180/422, Loss: 0.374, LR: 0.000048
+Epoch 48, Batch 190/422, Loss: 0.369, LR: 0.000048
+Epoch 48, Batch 200/422, Loss: 0.4392, LR: 0.000048
+Epoch 48, Batch 210/422, Loss: 0.2655, LR: 0.000048
+Epoch 48, Batch 220/422, Loss: 0.3848, LR: 0.000048
+Epoch 48, Batch 230/422, Loss: 0.4295, LR: 0.000048
+Epoch 48, Batch 240/422, Loss: 0.3043, LR: 0.000048
+Epoch 48, Batch 250/422, Loss: 0.3735, LR: 0.000048
+Epoch 48, Batch 260/422, Loss: 0.3368, LR: 0.000048
+Epoch 48, Batch 270/422, Loss: 0.2442, LR: 0.000048
+Epoch 48, Batch 280/422, Loss: 0.2973, LR: 0.000048
+Epoch 48, Batch 290/422, Loss: 0.3089, LR: 0.000048
+Epoch 48, Batch 300/422, Loss: 0.2984, LR: 0.000048
+Epoch 48, Batch 310/422, Loss: 0.4229, LR: 0.000048
+Epoch 48, Batch 320/422, Loss: 0.2834, LR: 0.000048
+Epoch 48, Batch 330/422, Loss: 0.3377, LR: 0.000048
+Epoch 48, Batch 340/422, Loss: 0.2811, LR: 0.000048
+Epoch 48, Batch 350/422, Loss: 0.3382, LR: 0.000048
+Epoch 48, Batch 360/422, Loss: 0.3921, LR: 0.000048
+Epoch 48, Batch 370/422, Loss: 0.3215, LR: 0.000048
+Epoch 48, Batch 380/422, Loss: 0.2446, LR: 0.000048
+Epoch 48, Batch 390/422, Loss: 0.2233, LR: 0.000048
+Epoch 48, Batch 400/422, Loss: 0.2559, LR: 0.000048
+Epoch 48, Batch 410/422, Loss: 0.3248, LR: 0.000048
+Epoch 48, Batch 420/422, Loss: 0.3245, LR: 0.000048
+
+Train Loss: 0.3047
+Val Loss: 1.3991
+mAP@0.50=0.5958, mAP@0.50:0.95=0.3653, Precision=0.6459, Recall=0.7272, F1=0.6863
+
+==================================================
+Epoch 49/50
+==================================================
+Epoch 49, Batch 0/422, Loss: 0.3951, LR: 0.000048
+Epoch 49, Batch 10/422, Loss: 0.2372, LR: 0.000048
+Epoch 49, Batch 20/422, Loss: 0.3442, LR: 0.000048
+Epoch 49, Batch 30/422, Loss: 0.2623, LR: 0.000048
+Epoch 49, Batch 40/422, Loss: 0.2695, LR: 0.000048
+Epoch 49, Batch 50/422, Loss: 0.3223, LR: 0.000048
+Epoch 49, Batch 60/422, Loss: 0.3956, LR: 0.000048
+Epoch 49, Batch 70/422, Loss: 0.4341, LR: 0.000048
+Epoch 49, Batch 80/422, Loss: 0.2511, LR: 0.000048
+Epoch 49, Batch 90/422, Loss: 0.3774, LR: 0.000048
+Epoch 49, Batch 100/422, Loss: 0.3816, LR: 0.000048
+Epoch 49, Batch 110/422, Loss: 0.2753, LR: 0.000048
+Epoch 49, Batch 120/422, Loss: 0.3834, LR: 0.000048
+Epoch 49, Batch 130/422, Loss: 0.2581, LR: 0.000048
+Epoch 49, Batch 140/422, Loss: 0.3365, LR: 0.000048
+Epoch 49, Batch 150/422, Loss: 0.4344, LR: 0.000048
+Epoch 49, Batch 160/422, Loss: 0.375, LR: 0.000048
+Epoch 49, Batch 170/422, Loss: 0.4209, LR: 0.000048
+Epoch 49, Batch 180/422, Loss: 0.3688, LR: 0.000048
+Epoch 49, Batch 190/422, Loss: 0.3474, LR: 0.000048
+Epoch 49, Batch 200/422, Loss: 0.2728, LR: 0.000048
+Epoch 49, Batch 210/422, Loss: 0.2821, LR: 0.000048
+Epoch 49, Batch 220/422, Loss: 0.2846, LR: 0.000048
+Epoch 49, Batch 230/422, Loss: 0.2651, LR: 0.000048
+Epoch 49, Batch 240/422, Loss: 0.326, LR: 0.000048
+Epoch 49, Batch 250/422, Loss: 0.3885, LR: 0.000048
+Epoch 49, Batch 260/422, Loss: 0.4353, LR: 0.000048
+Epoch 49, Batch 270/422, Loss: 0.3872, LR: 0.000048
+Epoch 49, Batch 280/422, Loss: 0.2811, LR: 0.000048
+Epoch 49, Batch 290/422, Loss: 0.2926, LR: 0.000048
+Epoch 49, Batch 300/422, Loss: 0.3985, LR: 0.000048
+Epoch 49, Batch 310/422, Loss: 0.3636, LR: 0.000048
+Epoch 49, Batch 320/422, Loss: 0.3476, LR: 0.000048
+Epoch 49, Batch 330/422, Loss: 0.2401, LR: 0.000048
+Epoch 49, Batch 340/422, Loss: 0.33, LR: 0.000048
+Epoch 49, Batch 350/422, Loss: 0.2905, LR: 0.000048
+Epoch 49, Batch 360/422, Loss: 0.3541, LR: 0.000048
+Epoch 49, Batch 370/422, Loss: 0.3578, LR: 0.000048
+Epoch 49, Batch 380/422, Loss: 0.2835, LR: 0.000048
+Epoch 49, Batch 390/422, Loss: 0.4121, LR: 0.000048
+Epoch 49, Batch 400/422, Loss: 0.3738, LR: 0.000048
+Epoch 49, Batch 410/422, Loss: 0.4113, LR: 0.000048
+Epoch 49, Batch 420/422, Loss: 0.3978, LR: 0.000048
+
+Train Loss: 0.2916
+Val Loss: 1.3777
+mAP@0.50=0.6059, mAP@0.50:0.95=0.3518, Precision=0.6498, Recall=0.7223, F1=0.6838
