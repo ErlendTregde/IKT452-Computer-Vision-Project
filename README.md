@@ -2,8 +2,6 @@
 
 **IKT452 Computer Vision — University of Agder**
 
----
-
 ## Overview
 
 This project investigates automated grocery product detection in retail shelf images, using **Deep Residual Learning** (ResNet — CVPR 2016 Best Paper) as a foundation. Four object detection architectures are implemented and compared on the [NorgesGruppen dataset](https://app.ainm.no/docs/norgesgruppen-data/overview) of 248 real shelf images spanning 356 product categories (~22,700 annotated bounding boxes).
