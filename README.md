@@ -2,8 +2,6 @@
 
 **IKT452 Computer Vision — University of Agder**
 
-Erlend Tregde · Sander Wesstøl
-
 ---
 
 ## Overview
