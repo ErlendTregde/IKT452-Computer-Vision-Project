@@ -826,6 +826,7 @@ Epoch 15, Batch 420/422, Loss: 0.4860, LR: 0.000049
 Train Loss: 0.5425
 Val Loss: 1.2683
 mAP@0.50=0.5946, mAP@0.50:0.95=0.3115, Precision=0.6202, Recall=0.6904, F1=0.6534
+Saved best model to checkpoints_rtdetr/best_model.pth
 
 ==================================================
 Epoch 16/50
