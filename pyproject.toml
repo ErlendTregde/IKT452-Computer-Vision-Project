@@ -16,5 +16,8 @@ dependencies = [
   "pyyaml",
   "rich",
   "scipy>=1.17.1",
+  "ipykernel>=7.2.0",
+  "huggingface-hub>=1.12.2",
+  "ultralytics>=8.4.44",
 ]
 
