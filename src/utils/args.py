@@ -7,12 +7,12 @@ def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train object detection model on a YOLO-format dataset")
 
     parser.add_argument("--model", default="faster-rcnn",
-                        choices=["faster-rcnn", "fpn", "efficientdet", "rtdetr"],
+                        choices=["faster-rcnn", "fpn", "efficientdet", "rtdetr", "yolov9"],
                         help="model architecture to train (default: faster-rcnn)")
     parser.add_argument("--dataset", default="dataset", metavar="PATH",
                         help="path to dataset root (default: dataset)")
-    parser.add_argument("--epochs", type=int, default=10, metavar="N",
-                        help="number of training epochs (default: 10)")
+    parser.add_argument("--epochs", type=int, default=None, metavar="N",
+                        help="number of training epochs (default: 10, or 50 for yolov9)")
     parser.add_argument("--batch-size", type=int, default=4, metavar="N",
                         help="images per batch (default: 4)")
     parser.add_argument("--lr", type=float, default=0.001, metavar="LR",
@@ -27,6 +27,8 @@ def parse_args() -> argparse.Namespace:
                         help="dataloader worker processes (default: 2)")
     parser.add_argument("--checkpoint-dir", default="checkpoints", metavar="DIR",
                         help="directory to write checkpoints (default: checkpoints)")
+    parser.add_argument("--log-path", default=None, metavar="PATH",
+                        help="optional plain-text log output path (used by yolov9)")
     parser.add_argument("--resume", default=None, metavar="PATH",
                         help="resume training from a checkpoint file")
     parser.add_argument("--no-metrics", action="store_true",

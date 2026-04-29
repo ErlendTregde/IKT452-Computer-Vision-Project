@@ -35,9 +35,49 @@ def build_model(name: str, num_classes: int):
     raise ValueError(f"Unknown model: {name}")
 
 
+def get_yolo_device(device: torch.device) -> str | int:
+    return 0 if device.type == "cuda" else "cpu"
+
+
+def run_yolov9(args, device: torch.device) -> None:
+    from models.YOLOv9 import YOLOv9
+
+    checkpoint_dir = args.checkpoint_dir
+    if checkpoint_dir == "checkpoints":
+        checkpoint_dir = "checkpoints_yolov9"
+
+    log_path = args.log_path or "logs/old/yolov9.log"
+    num_epochs = args.epochs if args.epochs is not None else 50
+
+    model = YOLOv9(weights="yolov9m.pt")
+    total_params, trainable_params = model.parameter_counts()
+    print(f"Model: yolov9  |  total params: {total_params/1e6:.1f}M  "
+          f"trainable: {trainable_params/1e6:.1f}M")
+
+    generated_log = model.train_model(
+        dataset_dir=args.dataset,
+        epochs=num_epochs,
+        batch_size=args.batch_size,
+        device=get_yolo_device(device),
+        checkpoint_dir=checkpoint_dir,
+        log_path=log_path,
+        lr0=args.lr,
+        momentum=args.momentum,
+        weight_decay=args.weight_decay,
+        workers=args.num_workers,
+        patience=args.patience,
+        resume=args.resume,
+    )
+    print(f"YOLOv9 log saved to {generated_log}")
+
+
 def main():
     args = parse_args()
     device = get_device()
+
+    if args.model == "yolov9":
+        run_yolov9(args, device)
+        return
 
     train_loader, val_loader = create_dataloaders(
         args.dataset,
@@ -47,6 +87,7 @@ def main():
     num_classes = train_loader.dataset.num_classes  # type: ignore
 
     model = build_model(args.model, num_classes)
+    num_epochs = args.epochs if args.epochs is not None else 10
 
     total_params = sum(p.numel() for p in model.parameters())
     trainable_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
@@ -57,7 +98,7 @@ def main():
         model=model,
         train_loader=train_loader,
         val_loader=val_loader,
-        num_epochs=args.epochs,
+        num_epochs=num_epochs,
         device=device,
         lr=args.lr,
         momentum=args.momentum,
