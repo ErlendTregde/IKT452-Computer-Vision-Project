@@ -55,9 +55,8 @@ def gradcam(yolo: YOLO, image_path: str | Path, img_size: int = IMG_SIZE) -> np.
     cam = cv2.GaussianBlur(cam, (0, 0), sigmaX=h0 / 40)
     cam = np.clip(cam / (np.percentile(cam, 99) + 1e-8), 0, 1)
 
-    heatmap = cv2.applyColorMap(np.uint8(255 * cam), cv2.COLORMAP_JET).astype(np.float32)
-    alpha = (np.power(cam, 3) * 0.85).astype(np.float32)[..., None]
-    return (bgr.astype(np.float32) * (1 - alpha) + heatmap * alpha).astype(np.uint8)
+    heatmap = cv2.applyColorMap(np.uint8(255 * cam), cv2.COLORMAP_JET)
+    return cv2.addWeighted(bgr, 0.6, heatmap, 0.4, 0)
 
 
 def main() -> None:
